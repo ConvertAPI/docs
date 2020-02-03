@@ -6,24 +6,25 @@ Please find regions listed below and contact us to set up ConvertAPI in your GEO
 
 
 | Region      | City           | Status  |
-| ------------- |:-------------:| -----:|
-|US East      | right-aligned | $1600 |
-|Europe     | centered      |   $12 |
-|Southeast Asia | are neat      |    $1 |
-|US South | are neat      |    $1 |
-|US West | are neat      |    $1 |
-|North America | are neat      |    $1 |
-|South America | are neat      |    $1 |
-|Europe | are neat      |    $1 |
-|Europe | are neat      |    $1 |
-|Europe | are neat      |    $1 |
-|Europe | are neat      |    $1 |
-|Europe | are neat      |    $1 |
-|Europe | are neat      |    $1 |
-|South Africa | are neat      |    $1 |
-|South Asia | are neat      |    $1 |
-|Southeast Asia | are neat      |    $1 |
-|South China | are neat      |    $1 |
-|East Asia| are neat      |    $1 |
-|East Asia| are neat      |    $1 |
-|Oceania| are neat      |    $1 |
+| ------------- |:-------------| -----:|
+|US East      | Washington DC, US| Online |
+|Europe     | Amsterdam, NL      |   Online |
+|Southeast Asia | Singapore, SG     |   Online |
+|US South |     Dallas, US  |    [Request to set up](https://www.convertapi.com/support) |
+|US West | San Jose, US     |    [Request to set up](https://www.convertapi.com/support) |
+|North America | Toronto, CA      |   [Request to set up](https://www.convertapi.com/support) |
+|North America| Querétaro, MX     |    [Request to set up](https://www.convertapi.com/support)|
+|South America | São Paulo, BR      |    [Request to set up](https://www.convertapi.com/support)|
+|Europe | are neat      |    [Request to set up](https://www.convertapi.com/support) |
+|Europe | are neat      |    [Request to set up](https://www.convertapi.com/support) |
+|Europe | are neat      |    [Request to set up](https://www.convertapi.com/support) |
+|Europe | are neat      |    [Request to set up](https://www.convertapi.com/support) |
+|Europe | are neat      |    [Request to set up](https://www.convertapi.com/support) |
+|Europe | are neat      |    [Request to set up](https://www.convertapi.com/support) |
+|South Africa | are neat      |    [Request to set up](https://www.convertapi.com/support) |
+|South Asia | are neat      |    [Request to set up](https://www.convertapi.com/support) |
+|Southeast Asia | are neat      |    [Request to set up](https://www.convertapi.com/support) |
+|South China | are neat      |   [Request to set up](https://www.convertapi.com/support) |
+|East Asia| are neat      |    [Request to set up](https://www.convertapi.com/support) |
+|East Asia| are neat      |    [Request to set up](https://www.convertapi.com/support)|
+|Oceania| are neat      |    [Request to set up](https://www.convertapi.com/support) |
