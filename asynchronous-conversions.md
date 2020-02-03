@@ -40,21 +40,31 @@ The ConvertAPI support WebHooks, when conversion is done the WebHook URL is call
 
 **Asynchronous conversion request**
 
-`POST https://v2.convertapi.com/convert/docx/to/pdf?Secret=XXX&Async=true&WebHook=http://www.example.com/WaitingForWebHook&File=http://example.com/myfile.docx`
+```
+[POST]
+https://v2.convertapi.com/convert/docx/to/pdf?Secret=XXX&Async=true&WebHook=http://www.example.com/WaitingForWebHook&File=http://example.com/myfile.docx
+```
 
 **Response**
 
-`{"JobId": "d3bd2056-4330-4cf3-9b18-483a2412dd6b"}`
+```
+{"JobId": "d3bd2056-4330-4cf3-9b18-483a2412dd6b"}
+```
 
 The response includes `JobId` and when conversion is finished the WebHook URL will be called with the same `JobId` using `GET method`:
 
-`http://www.example.com/WaitingForWebHook?JobId=d3bd2056-4330-4cf3-9b18-483a2412dd6b`
+```
+http://www.example.com/WaitingForWebHook?JobId=d3bd2056-4330-4cf3-9b18-483a2412dd6b
+```
 
 Using received `JobId` the actual conversion result could be read.
 
 **Poll result request**
 
-`GET https://v2.convertapi.com/job/d3bd2056-4330-4cf3-9b18-483a2412dd6b`
+```
+[GET]
+https://v2.convertapi.com/job/d3bd2056-4330-4cf3-9b18-483a2412dd6b
+```
 
 > Only one request of pulling is accepted, no concurrent poll requests are allowed. The second pool request will get 503 status code if first is not finished. Also there is delay of 5 second for the seconds pool request.
 
@@ -72,7 +82,10 @@ Semi-Asynchronous file conversions are useful when connection to ConvertAPI is l
 
 **Semi-Asynchronous conversion request**
 
-`POST https://v2.convertapi.com/convert/docx/to/pdf?Secret=XXX&JobId=d3bd2056-4330-4cf3-9b18-483a2412dd6b&File=http://example.com/myfile.docx`
+```
+[POST]
+https://v2.convertapi.com/convert/docx/to/pdf?Secret=XXX&JobId=d3bd2056-4330-4cf3-9b18-483a2412dd6b&File=http://example.com/myfile.docx
+```
 
 In case of disrupted connection treat this conversion as if it was asynchronous conversion. Retrieve conversion result like described in asynchronous conversion section.
 
@@ -82,7 +95,10 @@ If job is no longer required it can be deleted using DELETE request or it would 
 
 **Delete job request**
 
-`DELETE https://v2.convertapi.com/job/d3bd2056-4330-4cf3-9b18-483a2412dd6b`
+```
+[DELETE]
+https://v2.convertapi.com/job/d3bd2056-4330-4cf3-9b18-483a2412dd6b
+```
 
 ### Response HTTP status codes
 * `200` Deleted successful.
