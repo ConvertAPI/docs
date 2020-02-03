@@ -4,11 +4,17 @@ Asynchronous file conversions are made by setting parameter `Async` to `True`. T
 
 **Asynchronous conversion request**
 
-`POST https://v2.convertapi.com/convert/docx/to/pdf?Secret=XXX&Async=true&File=http://example.com/myfile.docx`
+```
+[POST]
+
+https://v2.convertapi.com/convert/docx/to/pdf?Secret=XXX&Async=true&File=http://example.com/myfile.docx
+```
 
 **Response**
 
-`{"JobId": "d3bd2056-4330-4cf3-9b18-483a2412dd6b"}`
+```
+{"JobId": "d3bd2056-4330-4cf3-9b18-483a2412dd6b"}
+```
 
 Now using JobId it is possible to retrieve finished conversion result or get the conversion status.
 
