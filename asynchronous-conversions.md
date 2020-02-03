@@ -6,7 +6,6 @@ Asynchronous file conversions are made by setting parameter `Async` to `True`. T
 
 ```
 [POST]
-
 https://v2.convertapi.com/convert/docx/to/pdf?Secret=XXX&Async=true&File=http://example.com/myfile.docx
 ```
 
@@ -20,7 +19,10 @@ Now using JobId it is possible to retrieve finished conversion result or get the
 
 **Poll result request**
 
-`GET https://v2.convertapi.com/job/d3bd2056-4330-4cf3-9b18-483a2412dd6b`
+```
+[GET]
+https://v2.convertapi.com/job/d3bd2056-4330-4cf3-9b18-483a2412dd6b
+```
 
 > Only one request of pulling is accepted, no concurrent poll requests are allowed. The second pool request will get 503 status code if first is not finished. Also there is delay of 5 second for the seconds pool request.
 
