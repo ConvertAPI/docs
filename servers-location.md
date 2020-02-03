@@ -15,16 +15,16 @@ Please find regions listed below and contact us to set up ConvertAPI in your GEO
 |North America | Toronto, CA      |   [Request to set up](https://www.convertapi.com/support) |
 |North America| Querétaro, MX     |    [Request to set up](https://www.convertapi.com/support)|
 |South America | São Paulo, BR      |    [Request to set up](https://www.convertapi.com/support)|
-|Europe | are neat      |    [Request to set up](https://www.convertapi.com/support) |
-|Europe | are neat      |    [Request to set up](https://www.convertapi.com/support) |
-|Europe | are neat      |    [Request to set up](https://www.convertapi.com/support) |
-|Europe | are neat      |    [Request to set up](https://www.convertapi.com/support) |
-|Europe | are neat      |    [Request to set up](https://www.convertapi.com/support) |
-|Europe | are neat      |    [Request to set up](https://www.convertapi.com/support) |
-|South Africa | are neat      |    [Request to set up](https://www.convertapi.com/support) |
-|South Asia | are neat      |    [Request to set up](https://www.convertapi.com/support) |
-|Southeast Asia | are neat      |    [Request to set up](https://www.convertapi.com/support) |
-|South China | are neat      |   [Request to set up](https://www.convertapi.com/support) |
-|East Asia| are neat      |    [Request to set up](https://www.convertapi.com/support) |
-|East Asia| are neat      |    [Request to set up](https://www.convertapi.com/support)|
-|Oceania| are neat      |    [Request to set up](https://www.convertapi.com/support) |
+|Europe | London, UK      |    [Request to set up](https://www.convertapi.com/support) |
+|Europe | Paris, FR     |    [Request to set up](https://www.convertapi.com/support) |
+|Europe | Barcelona, ES      |    [Request to set up](https://www.convertapi.com/support) |
+|Europe |Winterthur, CH      |    [Request to set up](https://www.convertapi.com/support) |
+|Europe | 	Milan, IT      |    [Request to set up](https://www.convertapi.com/support) |
+|Europe | Frankfurt, DE      |    [Request to set up](https://www.convertapi.com/support) |
+|South Africa | Rosslyn, RSA      |    [Request to set up](https://www.convertapi.com/support) |
+|South Asia | Chennai, IN     |    [Request to set up](https://www.convertapi.com/support) |
+|Southeast Asia | Singapore, SG     |    [Request to set up](https://www.convertapi.com/support) |
+|South China | Hong Kong, HK      |   [Request to set up](https://www.convertapi.com/support) |
+|East Asia| Seoul, KR      |    [Request to set up](https://www.convertapi.com/support) |
+|East Asia| Tokyo, JP     |    [Request to set up](https://www.convertapi.com/support)|
+|Oceania| Sydney, AU     |    [Request to set up](https://www.convertapi.com/support) |
