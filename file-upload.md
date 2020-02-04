@@ -61,7 +61,7 @@ https://v2.convertapi.com/upload?url=http%3A%2F%2Fexample.com%2Ffile.doc&FileNam
 }
 ```
 Additionally can be provided "HeaderName" and "HeaderValue" parameters, needed for integration with third party systems like Google Drive.
-### HTTP response codes
+#### HTTP response codes
 * **200** Upload completed successfully.
 * **500** Unable to download remote file.
 
