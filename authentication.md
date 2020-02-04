@@ -35,6 +35,17 @@ https://v2.convertapi.com/token/create?Secret=XXXX&RequestCount=3&Lifetime=10000
     ]
 }
 ```
+#### Token usage
+```
+[POST] 
+https://v2.convertapi.com/convert/doc/to/pdf?Token=4X4RxBGP
+```
+#### Delete token
+You can leave token to expire or delete it right away.
+```
+[DELETE] 
+https://v2.convertapi.com/token/E1vYBWy7TAabnFSReCTJGiFUx3xoCJiyIwbPWvuRpcM=
+```
 ### Generate Token
 Token generation algorithm steps:
 
@@ -46,8 +57,63 @@ Token generation algorithm steps:
 * Encrypt token string with AES encryption algorithm using your secret as encryption key, initialization vector (IV) should be "//convertapi.com".
 * Encode encrypted string with Base64 algorithm.
 
-### Token usage
+#### Token generation code example
+```csharp
+public static class SelfGeneratedToken
+{
+    private const int TokenLength = 8;
+
+    private static string GenerateUniqueString(int length)
+    {
+        var bytes = new byte[100];
+        var rng = RandomNumberGenerator.Create();
+        rng.GetBytes(bytes);
+        return new string(Convert.ToBase64String(bytes).Where(char.IsLetterOrDigit).Take(length).ToArray());
+    }
+
+    private static AesCryptoServiceProvider AesCryptoServiceProvider(string secret)
+    {
+        var aesCsp = new AesCryptoServiceProvider
+        {
+            BlockSize = 128,
+            IV = Encoding.ASCII.GetBytes("//convertapi.com"),
+            Key = Encoding.ASCII.GetBytes(secret)
+        };
+        return aesCsp;
+    }
+
+    private static string UrlBase64Encode(byte[] bytes)
+    {
+        return Convert.ToBase64String(bytes).Replace('+', '-').Replace('/', '_').TrimEnd('=');
+    }
+
+    public static string Create(string secret, TimeSpan validityDuration, string userIp, int? requestCount)
+    {
+        var expireTimeStamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds() + validityDuration.TotalSeconds;
+        var tokenUuid = GenerateUniqueString(TokenLength);
+        var tokenDataString = $"{tokenUuid}|{expireTimeStamp}|{userIp}|{requestCount}";
+
+        var tokenDataBytes = Encoding.ASCII.GetBytes(tokenDataString);
+        var aesCsp = AesCryptoServiceProvider(secret);
+        var encryptedTokenData = aesCsp.CreateEncryptor().TransformFinalBlock(tokenDataBytes, 0, tokenDataBytes.Length);
+        return UrlBase64Encode(encryptedTokenData);
+    }
+}
+```
+Self generated token must be used **together with ApiKey** parameter. ApiKey can be found in [Control Panel](https://www.convertapi.com/a).
+#### Token usage
 ```
 [POST] 
-https://v2.convertapi.com/convert/doc/to/pdf?Token=4X4RxBGP
+https://v2.convertapi.com/convert/docx/to/pdf?ApiKey=0000000000&Token=E1vYBWy7TAabnFSReCTJGiFUx3xoCJiyIwbPWvuRpcM=
 ```
+### HTTP Response Codes
+* `200 Ok` 
+  * `2000` Token created successfully.
+  * `2001 ` Token deleted successfully.
+  
+* `401 Unauthorized` Authentication failure. 
+  * `4010` Invalid user credentials - bad secret.
+  * `4011` Invalid user credentials - bad token.
+  * `4012` Invalid user credentials - bad self generated token.
+  * `4013` User credentials not set, secret or token must be passed.
+  * `4014` User inactive.
