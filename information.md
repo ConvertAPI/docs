@@ -22,7 +22,7 @@ https://v2.convertapi.com/info/*/to/pdf
 [GET]
 https://v2.convertapi.com/info/pdf/to/*
 ```
-###List information about converter ExcelToJpg
+### List information about converter ExcelToJpg
 ```
 [GET]
 https://v2.convertapi.com/info/converter/ExcelToJpg
