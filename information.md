@@ -32,5 +32,6 @@ https://v2.convertapi.com/info/converter/ExcelToJpg
 [GET]
 https://v2.convertapi.com/info/canconvert/doc/to/pdf
 ````
-Response:
-Returns HTTP status 200 - supported, 404 - not supported
+### Response HTTP status codes
+* **200** - supported
+* **404** - not supported
