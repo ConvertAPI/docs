@@ -22,7 +22,7 @@ Content-Disposition: inline; filename="my_file.doc"
     "FileExt": "doc"
 }
 ```
-**multipart/form-data**
+#### multipart/form-data
 There can be one and only part with file data.
 ```
 [POST]
