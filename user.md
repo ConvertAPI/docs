@@ -1,6 +1,6 @@
 Endpoint returns information about your account. Useful to check account balance status.
 
-#### User information request example
+### User information request example
 ```
 [GET]
 https://v2.convertapi.com/user?Secret=XXXX
