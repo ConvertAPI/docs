@@ -1,6 +1,6 @@
 These libraries are maintained by the developers at ConvertAPI and are the easiest way to integrate ConvertAPI with your application.
 
-!!!Add library images here!!!
+!!!Add library title, programming langauge, short instalation inctruction!!!
 
 ### Don't see the library you're looking for?
 
