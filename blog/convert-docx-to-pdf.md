@@ -1,5 +1,3 @@
-# How to convert DOCX to PDF using C#
-
 Converting DOCX to PDF might be a tricky process sometimes. Especially if you want to convert multiple DOCX files at once. Most of the desktop software doesn’t give you this kind of functionality and you can only convert files one by one. What if I told you that in just a few easy steps you could code your own batch DOCX to PDF converter using C#? Sounds complicated? Well, it’s really way easier than it sounds! I will explain the process in a few simple steps:
 
 ## Choosing the right Word to PDF REST API converter
@@ -19,7 +17,7 @@ First of all, we need to go and register for free at the ConvertAPI.com website 
 
 Once registered, you will get your own Secret Key that can be found inside an Overview page. Keep that page open, we will need this key shortly.
 
-![Retrieve secret](https://user-images.githubusercontent.com/62603039/77765772-6ce29900-7047-11ea-963f-805485c10e35.png)
+![Retrieve secret](https://user-images.githubusercontent.com/62603039/77777970-f6e72d80-7058-11ea-94d8-6b7f7fe01318.png)
 
 ## Creating a C# console application for DOCX to PDF conversion
 
@@ -47,24 +45,10 @@ Let’s write a simple program DOCX to PDF in C# that converts all Word files pl
 
 ![Folder structure](https://user-images.githubusercontent.com/62603039/77764482-62bf9b00-7045-11ea-82e2-7ca72d3637b8.png)
 
-We will start coding by initializing the ConvertApi library and specifying our *secret* that we already have from ConvertAPI.com website.
+We will start coding by initializing the ConvertApi library and specifying our **secret** that we already have from ConvertAPI.com website.
 
 ```csharp
-using ConvertApiDotNet;
-using System.IO;
-
-namespace ConsoleApp2
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // Creating ConvertApi instance and providing our secret key
-            var convertapi = new ConvertApi("BOOC3MgKFMYObO3E");
-
-        }
-    }
-}
+var convertapi = new ConvertApi("YjBOvutSdT9eVtfa");
 ```
 
 Now let’s write full code that iterates through our Docx files in a C:\Documents folder and convert them into PDF programmatically using C# code provided below.
@@ -80,7 +64,7 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             // Creating ConvertApi instance and providing our secret key
-            var convertapi = new ConvertApi("BOOC3MgKFMYObO3E");
+            var convertapi = new ConvertApi("YjBOvutSdT9eVtfa");
 
             foreach (var docxFile in Directory.EnumerateFiles(@"C:\Documents"))
             {
@@ -99,7 +83,7 @@ All the magic is done by line convertapi.ConvertFile(docxFile, pdfFile); which t
 ![Converted results](https://user-images.githubusercontent.com/62603039/77764764-d661a800-7045-11ea-8f32-f0808d6b030f.png)
 The API supports a bunch of properties, all of them can be found at https://www.convertapi.com/docx-to-pdf. The ConvertApiParam object must be created and passed into ConvertFile method as a parameter. The example below use PageRange to limit conversion to 1-3 pages from word document to pdf.
 
-# Complete code
+## Complete code
 
 ```csharp
 using ConvertApiDotNet;
@@ -112,7 +96,7 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             // Creating ConvertApi instance and providing our secret key
-            var convertapi = new ConvertApi("BOOC3MgKFMYObO3E");
+            var convertapi = new ConvertApi("YjBOvutSdT9eVtfa");
 
             foreach (var docxFile in Directory.EnumerateFiles(@"C:\Documents"))
             {
@@ -130,6 +114,6 @@ namespace ConsoleApp2
 }
 ```
 
-# Conclusion
+## Conclusion
 
 To sum up, there is a really simple and neat way of converting multiple Word documents into PDF file formats while leaving all the ugly work for the ConvertAPI processor. From now on, you simply need to copy your documents into that specified input directory and get the converted results instantly! It really can be set up in just a few minutes, watch a video below and see it in action. That’s it folks, hope you enjoy it!
