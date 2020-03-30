@@ -43,7 +43,7 @@ You can find the source on GitHub if needed ([https://github.com/ConvertAPI/conv
 
 Let’s write a simple program DOCX to PDF in C# that converts all Word files placed in the directory specified  to a PDF file format. 
 
-![Folder structure](https://user-images.githubusercontent.com/62603039/77894040-6473a380-727d-11ea-8e5d-72370d9d4f2c.png)
+![Folder structure](https://user-images.githubusercontent.com/62603039/77894440-f5e31580-727d-11ea-8d74-259f24dbd725.png)
 
 We will start coding by initializing the ConvertApi library and specifying our **secret** that we already have from ConvertAPI.com website.
 
