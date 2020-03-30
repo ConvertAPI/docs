@@ -43,7 +43,7 @@ You can find the source on GitHub if needed ([https://github.com/ConvertAPI/conv
 
 Let’s write a simple program DOCX to PDF in C# that converts all Word files placed in the directory specified  to a PDF file format. 
 
-![Folder structure](https://user-images.githubusercontent.com/62603039/77764482-62bf9b00-7045-11ea-82e2-7ca72d3637b8.png)
+![Folder structure](https://user-images.githubusercontent.com/62603039/77894040-6473a380-727d-11ea-8e5d-72370d9d4f2c.png)
 
 We will start coding by initializing the ConvertApi library and specifying our **secret** that we already have from ConvertAPI.com website.
 
@@ -57,7 +57,7 @@ Now let’s write full code that iterates through our Docx files in a C:\Documen
 using ConvertApiDotNet;
 using System.IO;
 
-namespace ConsoleApp2
+namespace WordToPdf
 {
     class Program
     {
@@ -80,7 +80,7 @@ namespace ConsoleApp2
 ```
 
 All the magic is done by line convertapi.ConvertFile(docxFile, pdfFile); which takes word documents and converts them to PDF.
-![Converted results](https://user-images.githubusercontent.com/62603039/77764764-d661a800-7045-11ea-8f32-f0808d6b030f.png)
+![Converted results](https://user-images.githubusercontent.com/62603039/77894058-6c334800-727d-11ea-8163-fd88309e9ff8.png)
 The API supports a bunch of properties, all of them can be found at https://www.convertapi.com/docx-to-pdf. The ConvertApiParam object must be created and passed into ConvertFile method as a parameter. The example below use PageRange to limit conversion to 1-3 pages from word document to pdf.
 
 ## Complete code
@@ -89,7 +89,7 @@ The API supports a bunch of properties, all of them can be found at https://www.
 using ConvertApiDotNet;
 using System.IO;
 
-namespace ConsoleApp2
+namespace WordToPdf
 {
     class Program
     {
