@@ -80,7 +80,9 @@ namespace WordToPdf
 ```
 
 All the magic is done by line convertapi.ConvertFile(docxFile, pdfFile); which takes word documents and converts them to PDF.
+
 ![Converted results](https://user-images.githubusercontent.com/62603039/77894058-6c334800-727d-11ea-8163-fd88309e9ff8.png)
+
 The API supports a bunch of properties, all of them can be found at https://www.convertapi.com/docx-to-pdf. The ConvertApiParam object must be created and passed into ConvertFile method as a parameter. The example below use PageRange to limit conversion to 1-3 pages from word document to pdf.
 
 ## Complete code
@@ -116,4 +118,6 @@ namespace WordToPdf
 
 ## Conclusion
 
-To sum up, there is a really simple and neat way of converting multiple Word documents into PDF file formats while leaving all the ugly work for the ConvertAPI processor. From now on, you simply need to copy your documents into that specified input directory and get the converted results instantly! It really can be set up in just a few minutes, watch a video below and see it in action. That’s it folks, hope you enjoy it!
+There is a really simple and neat way of converting multiple Word documents into PDF file formats while leaving all the ugly work for ConvertAPI processor. From now on, you simply need to copy your documents into that specified input directory and retrieve the converted results instantly! It really can be set up in less than few minutes, watch a video below and see it in action.
+
+That’s it folks, hope you find it helpful!
