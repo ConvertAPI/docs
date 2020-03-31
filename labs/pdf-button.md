@@ -22,7 +22,7 @@ Result:
 
 ```
 <decode>
-<a href="#" onclick="this.setAttribute('href', 'https://v2.convertapi.com/convert/web/to/pdf?secret=<YOUR SECRET HERE>&amp;download=attachment&amp;url=' + encodeURI(window.location))">Save page as PDF</a>
+<a href="#" class="d-block mb-3" onclick="this.setAttribute('href', 'https://v2.convertapi.com/convert/web/to/pdf?secret=<YOUR SECRET HERE>&amp;download=attachment&amp;url=' + encodeURI(window.location))">Save page as PDF</a>
 </decode>
 ```
   
@@ -40,7 +40,7 @@ Private PDF button example HTML:
 ```javascript
 <script src="https://cdn.convertapi.com/button.js" data-secret=""></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.convertapi.com/button.css">
-<button class="convertapi-btn">Save page as PDF</button>
+<button class="convertapi-btn mb-3">Save page as PDF</button>
 ```
 Result:
 
