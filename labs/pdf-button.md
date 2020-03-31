@@ -13,7 +13,7 @@ Please sign in to test this example.
 
 Public PDF button example HTML:
 
-```html
+```javascript
 <a onclick="this.setAttribute('href', 'https://v2.convertapi.com/convert/web/to/pdf?secret=<YOUR SECRET HERE>&download=attachment&url=' + encodeURI(window.location))" href="#">
     Save page as PDF
 </a>
@@ -37,7 +37,7 @@ Please sign in to test this example.
 
 Private PDF button example HTML:
 
-```html
+```javascript
 <script src="https://cdn.convertapi.com/button.js" data-secret=""></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.convertapi.com/button.css">
 <button class="convertapi-btn">Save page as PDF</button>
