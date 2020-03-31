@@ -7,12 +7,46 @@ PDF button makes it easy for your users to save your web site pages as PDF files
 
 Public PDF button can be placed inside pages that are publicly accessible. This button is simple HTML link. If needed link can be styled with the CSS to look like a button.
 
+Please sign in to test this example.
+
 Public PDF button example HTML:
 
 ```html
 <a onclick="this.setAttribute('href', 'https://v2.convertapi.com/convert/web/to/pdf?secret=<YOUR SECRET HERE>&download=attachment&url=' + encodeURI(window.location))" href="#">
     Save page as PDF
 </a>
+```
+Result:
+
+```
+<decode>
+<a href="#" onclick="this.setAttribute('href', 'https://v2.convertapi.com/convert/web/to/pdf?secret=<YOUR SECRET HERE>&amp;download=attachment&amp;url=' + encodeURI(window.location))">Save page as PDF</a>
+</decode>
+```
+
+Conversion parameters can be set as a URL query parameters. More information about WEB to PDF conversion parameters can be found in converter page. To hide button itself during conversion use hideelements parameter. This parameter accepts element selector string e.g. to hide button with 'convertapi-btn' class set 'hideelements=.convertapi-btn'.
+
+## Button for private pages
+
+Private PDF button can be placed inside pages that are not publicly accessible. Pages can be protected with any kind of authentication. All linked resources (JS, CSS, images) inside HTML must be publicly accessible. Button requires JS library though CSS library is optional.
+
+Please sign in to test this example.
+
+Private PDF button example HTML:
+
+```html
+<script src="https://cdn.convertapi.com/button.js" data-secret=""></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.convertapi.com/button.css">
+<button class="convertapi-btn">Save page as PDF</button>
+```
+Result:
+
+```
+<decode>
+<script src="https://cdn.convertapi/com/button.js" data-secret="<YOUR SECRET HERE>"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.convertapi.com/button.css">
+<button class="convertapi-btn">Save page as PDF</button>
+</decode>
 ```
 
 ## Parameters
@@ -37,10 +71,3 @@ Tag must have 'convertapi-btn' class or the one that is set by data-selector att
 - **data-view** - to display file in the browser instead of downloading it. Available values: 'true', 'false'. Default: 'false'.
 - **data-params** - other conversion parameters. Format is the same as URL query parameter: 'parameter=value&parameter=value&etc...'. All conversion parameters can be found in PDF converter page.
 
-```
-<decode>
-<script src="https://cdn.convertapi/com/button.js" data-secret="<YOUR SECRET HERE>"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.convertapi.com/button.css">
-<button class="convertapi-btn">Save page as PDF</button>
-</decode>
-```
