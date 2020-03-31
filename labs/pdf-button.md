@@ -24,6 +24,7 @@ Result:
 </decode>
 ```
 
+
 Conversion parameters can be set as a URL query parameters. More information about WEB to PDF conversion parameters can be found in converter page. To hide button itself during conversion use hideelements parameter. This parameter accepts element selector string e.g. to hide button with 'convertapi-btn' class set 'hideelements=.convertapi-btn'.
 
 ## Button for private pages
@@ -48,6 +49,7 @@ Result:
 <button class="convertapi-btn">Save page as PDF</button>
 </decode>
 ```
+
 
 ## Parameters
 
