@@ -25,7 +25,7 @@ Result:
 <a href="#" onclick="this.setAttribute('href', 'https://v2.convertapi.com/convert/web/to/pdf?secret=<YOUR SECRET HERE>&amp;download=attachment&amp;url=' + encodeURI(window.location))">Save page as PDF</a>
 </decode>
 ```
-
+  
 
 Conversion parameters can be set as a URL query parameters. More information about WEB to PDF conversion parameters can be found in converter page. To hide button itself during conversion use hideelements parameter. This parameter accepts element selector string e.g. to hide button with 'convertapi-btn' class set 'hideelements=.convertapi-btn'.
 
@@ -51,7 +51,7 @@ Result:
 <button class="convertapi-btn">Save page as PDF</button>
 </decode>
 ```
-
+  
 
 ## Parameters
 
