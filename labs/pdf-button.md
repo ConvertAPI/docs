@@ -1,3 +1,5 @@
+## Save page as PDF button implementation
+
 PDF button makes it easy for your users to save your web site pages as PDF files. There are two types of PDF button:
   
 - **Public** - button should be used for pages that are publicly accessible without authentication. This button is simple HTML link tag, no external references needed.
