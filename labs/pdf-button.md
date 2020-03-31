@@ -37,6 +37,6 @@ Tag must have 'convertapi-btn' class or the one that is set by data-selector att
 - **data-view** - to display file in the browser instead of downloading it. Available values: 'true', 'false'. Default: 'false'.
 - **data-params** - other conversion parameters. Format is the same as URL query parameter: 'parameter=value&parameter=value&etc...'. All conversion parameters can be found in PDF converter page.
 
-<script src="https://cdn.convertapi.com/button.js" data-secret=""></script>
+<script src="https&#58;//cdn.convertapi.com/button.js" data-secret=""></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.convertapi.com/button.css">
 <button class="convertapi-btn">Save page as PDF</button>
