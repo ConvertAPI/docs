@@ -1,5 +1,3 @@
-# ConvertAPI Automator
-
 ## Automate file conversion on your desktop or server
 
 The ConvertAPI Automator is a tool for converting from one file format to another (e.g. `docx` -> `pdf`).
@@ -40,7 +38,7 @@ sudo mv convertapi-automator /usr/local/bin
 Run docker image:
 
 ```shell
-docker run -e "CONVERTAPI_SECRET=<YOUR_SECRET_HERE>" -v /tmp/caa:/var/lib/caa baltsoftcorp/convertapi-automator --watch --dir=/var/lib/caa
+docker run -e "CONVERTAPI_SECRET=YOUR_SECRET_HERE" -v /tmp/caa:/var/lib/caa baltsoftcorp/convertapi-automator --watch --dir=/var/lib/caa
 ```
 - **<YOUR_SECRET_HERE>** replace with your secret
 - **/tmp/caa** replace with your local input directory path
@@ -74,7 +72,7 @@ Prepare input directory before conversion (MS Windows):
 Make sure that the input directory contains no other files but a **copy** of your original document.
 
 ```shell
-convertapi-automator.exe --secret=<YOUR_SECRET_HERE> --dir=C:\path\to\convertdir 
+convertapi-automator.exe --secret=YOUR_SECRET_HERE --dir=C:\path\to\convertdir 
 ```
 
 After the program is finished you will find your `pdf` file inside `C:\path\to\convertdir\pdf`
@@ -90,7 +88,7 @@ It can be obtained from https://www.convertapi.com/a for free.
 _Example:_
 
 ```shell
---secret=1adr4h8n1oyycvpw
+--secret=YOUR_SECRET_HERE
 ```
 
 #### --dir
@@ -220,7 +218,7 @@ Directory structure:
 Command:
 
 ```shell
-convertapi-automator --secret=<YOUR_SECRET_HERE> --dir=/my/conversions --watch 
+convertapi-automator --secret=YOUR_SECRET_HERE --dir=/my/conversions --watch 
 ```
 
 #### Multiple input directories example
@@ -248,7 +246,7 @@ Directory structure:
 Command:
 
 ```shell
-convertapi-automator --secret=<YOUR_SECRET_HERE> --dir=/user1/imgconv --dir=/user1/splitpdf --dir=/user2/topdf --dir=/user3/totext --watch 
+convertapi-automator --secret=YOUR_SECRET_HERE --dir=/user1/imgconv --dir=/user1/splitpdf --dir=/user2/topdf --dir=/user3/totext --watch 
 ```
 
 #### Conversion chaining
@@ -267,7 +265,7 @@ All files that are located inside the input directories will be **DELETED** duri
 Command:
 
 ```shell
-convertapi-automator --secret=<YOUR_SECRET_HERE> --dir=/convert/topdf --watch 
+convertapi-automator --secret=YOUR_SECRET_HERE --dir=/convert/topdf --watch 
 ```
 
 Output directories can contain multiple subdirectories. The results will then be converted into each of them.
@@ -302,7 +300,7 @@ RotatePage=180
 Command:
 
 ```shell
-convertapi-automator --secret=<YOUR_SECRET_HERE> --dir=/conversion/splitandrotate --watch 
+convertapi-automator --secret=YOUR_SECRET_HERE --dir=/conversion/splitandrotate --watch 
 ```
 
 When running in `--watch` mode and merging files, input files must be provided in the `zip` archive.
