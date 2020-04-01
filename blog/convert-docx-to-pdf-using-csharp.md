@@ -48,7 +48,7 @@ Let’s write a simple program DOCX to PDF in C# that converts all Word files pl
 We will start coding by initializing the ConvertApi library and specifying our **secret** that we already have from ConvertAPI.com website.
 
 ```csharp
-var convertapi = new ConvertApi("YjBOvutSdT9eVtfa");
+var convertapi = new ConvertApi("YOUR_SECRET_HERE");
 ```
 
 Now let’s write full code that iterates through our Docx files in a C:\Documents folder and convert them into PDF programmatically using C# code provided below.
@@ -64,7 +64,7 @@ namespace WordToPdf
         static void Main(string[] args)
         {
             // Creating ConvertApi instance and providing our secret key
-            var convertapi = new ConvertApi("YjBOvutSdT9eVtfa");
+            var convertapi = new ConvertApi("YOUR_SECRET_HERE");
 
             foreach (var docxFile in Directory.EnumerateFiles(@"C:\Documents"))
             {
@@ -98,7 +98,7 @@ namespace WordToPdf
         static void Main(string[] args)
         {
             // Creating ConvertApi instance and providing our secret key
-            var convertapi = new ConvertApi("YjBOvutSdT9eVtfa");
+            var convertapi = new ConvertApi("YOUR_SECRET_HERE");
 
             foreach (var docxFile in Directory.EnumerateFiles(@"C:\Documents"))
             {
