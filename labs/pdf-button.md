@@ -47,7 +47,6 @@ Result:
 ```
 <decode>
 <script src="https://cdn.convertapi.com/button.js" data-secret="<YOUR SECRET HERE>"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.convertapi.com/button.css">
 <button class="convertapi-btn mb-3">Save page as PDF</button>
 </decode>
 ```
