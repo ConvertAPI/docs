@@ -200,7 +200,7 @@ Directory structure:
 Command:
 
 ```shell
-convertapi-automator --secret=<YOUR_SECRET_HERE> --dir=/my/conversions 
+convertapi-automator --secret=YOUR_SECRET_HERE --dir=/my/conversions 
 ```
 
 
