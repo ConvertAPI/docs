@@ -14,7 +14,7 @@ Please sign in to test this example.
 Public PDF button example HTML:
 
 ```javascript
-<a onclick="this.setAttribute('href', 'https://v2.convertapi.com/convert/web/to/pdf?secret=<YOUR SECRET HERE>&download=attachment&url=' + encodeURI(window.location))" href="#">
+<a onclick="this.setAttribute('href', 'https://v2.convertapi.com/convert/web/to/pdf?secret=<YOUR_SECRET_HERE>&download=attachment&url=' + encodeURI(window.location))" href="#">
     Save page as PDF
 </a>
 ```
@@ -22,7 +22,7 @@ Result:
 
 ```
 <decode>
-<a href="#" class="d-block mb-3" onclick="this.setAttribute('href', 'https://v2.convertapi.com/convert/web/to/pdf?secret=<YOUR SECRET HERE>&amp;download=attachment&amp;url=' + encodeURI(window.location))">Save page as PDF</a>
+<a href="#" class="d-block mb-3" onclick="this.setAttribute('href', 'https://v2.convertapi.com/convert/web/to/pdf?secret=<YOUR_SECRET_HERE>&amp;download=attachment&amp;url=' + encodeURI(window.location))">Save page as PDF</a>
 </decode>
 ```
   
@@ -38,7 +38,7 @@ Please sign in to test this example.
 Private PDF button example HTML:
 
 ```javascript
-<script src="https://cdn.convertapi.com/button.js" data-secret="<YOUR SECRET HERE>"></script>
+<script src="https://cdn.convertapi.com/button.js" data-secret="<YOUR_SECRET_HERE>"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.convertapi.com/button.css">
 <button class="convertapi-btn">Save page as PDF</button>
 ```
@@ -46,7 +46,7 @@ Result:
 
 ```
 <decode>
-<script src="https://cdn.convertapi.com/button.js" data-secret="<YOUR SECRET HERE>"></script>
+<script src="https://cdn.convertapi.com/button.js" data-secret="<YOUR_SECRET_HERE>"></script>
 <button class="convertapi-btn mb-3">Save page as PDF</button>
 </decode>
 ```
