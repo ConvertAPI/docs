@@ -40,7 +40,7 @@ Run docker image:
 ```shell
 docker run -e "CONVERTAPI_SECRET=YOUR_SECRET_HERE" -v /tmp/caa:/var/lib/caa baltsoftcorp/convertapi-automator --watch --dir=/var/lib/caa
 ```
-- **<YOUR_SECRET_HERE>** replace with your secret
+- **<YOUR_SECRET_HERE>** replace with your secret. If you sing-in the secret will be replaced automatically.
 - **/tmp/caa** replace with your local input directory path
 
 
