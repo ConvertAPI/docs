@@ -118,6 +118,7 @@ namespace WordToPdf
 
 ## Conclusion
 
-There is a really simple and neat way of converting multiple Word documents into PDF file formats while leaving all the ugly work for ConvertAPI processor. From now on, you simply need to copy your documents into that specified input directory and retrieve the converted results instantly! It really can be set up in less than few minutes, watch a video below and see it in action.
+There is a really simple and neat way of converting multiple Word documents into PDF file formats while leaving all the ugly work for ConvertAPI processor. From now on, you simply need to copy your documents into that specified input directory and retrieve the converted results instantly! It really can be set up in less than few minutes, watch a video below and see it in action. In this article we used 
+[ConvertAPI NuGet package](https://www.nuget.org/packages/ConvertApi/). The Git repository can be found at https://github.com/ConvertAPI/convertapi-dotnet. Try live demo and read more about conversion parameters at https://www.convertapi.com/docx-to-pdf.
 
 That’s it folks, hope you find it helpful!
