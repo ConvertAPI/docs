@@ -8,6 +8,7 @@ These libraries are maintained by the developers at ConvertAPI and are the easie
 - [Ruby](https://www.convertapi.com/doc/ruby-library)
 - [Go](https://www.convertapi.com/doc/go-library)
 - [CLI](https://www.convertapi.com/doc/cli-library)
+- [Swift](https://github.com/djups/ConvertApiSwift) (unofficial, contributor Alex Jovmir)
 
 ### Don't see the library you're looking for?
 
