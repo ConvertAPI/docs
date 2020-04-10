@@ -10,8 +10,8 @@ These libraries are maintained by the developers at ConvertAPI and are the easie
 - [CLI](https://www.convertapi.com/doc/cli-library)
 - [Swift](https://github.com/djups/ConvertApiSwift) (unofficial, contributor Alex Jovmir)
 
-### Don't see the library you're looking for?
+### Can't find the library you're looking for?
 
 If you can't find the right library, check out code examples at [Stack Overflow](https://stackoverflow.com/questions/tagged/convertapi) and the [code snippets](https://repl.it/@ConvertAPI) for various programming languages.
 
-We're building a wishlist of ConvertAPI plugins, libraries, and integrations. If you have something you'd like to see, or would like to contribute, [let us know](https://www.convertapi.com/support)!
+We're building a wishlist of ConvertAPI plugins, libraries, and integrations. If there is something you'd like to see or want to contribute, [let us know](https://www.convertapi.com/support)!
