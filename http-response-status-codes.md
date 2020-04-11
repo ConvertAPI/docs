@@ -1,4 +1,4 @@
-This is the list of all HTTP response status codes returned by ConvertAPI. The three-number code describes HTTP Status code and four number code shows additional information about result in the response body. The example response body of authentication failure:
+This is the list of all HTTP response status codes returned by ConvertAPI. The three-number code describes HTTP Status code and four number code shows additional information about the result in the response body. The example response body of authentication failure:
 
 **Response Header**
 
@@ -19,10 +19,10 @@ HTTP status code 401
 * `200 OK` Conversion completed successfully.
 
 ### Malformed request
-* `400 Bad Request` Request do not provide all data to execute conversion.
+* `400 Bad Request` Request does not provide all data to execute the conversion.
   * `4000` Parameter validation error.
   * `4001` No content disposition provided.
-  * `4002` Bad JSon format.
+  * `4002` Bad JSON format.
   * `4005` File encoded in Base64 not found.
 
 ### Authentication
@@ -42,10 +42,10 @@ HTTP status code 401
   * `5004` No tables to extract in PDF file.
   * `5005` Invalid URL format.
   * `5006` Invalid password.
-  * `5007` Unable to download remote file.
-  * `5008` Unable to access file from local storage.
+  * `5007` Unable to download the remote file.
+  * `5008` Unable to access the file from local storage.
   * `5009` File id is invalid.
   * `50010` File link is set incorrectly. Url or File Id must be set.
 
 ### Throttle failure
-* `502 Bad Gateway` Request rejected due to rate limits. Retry is possible after several seconds.
+* `502 Bad Gateway` Request rejected due to rate limits. Retry is available after a few seconds.
