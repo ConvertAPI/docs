@@ -1,4 +1,4 @@
-Every conversion request call must be authenticated with `secret` or `token` and submited as `query parameter`. More detailed authentication methods covered in [Authentication](https://www.convertapi.com/doc/auth) section. All supported [file format](https://www.convertapi.com/doc/supported-formats) conversions are provided here.
+Every conversion request call must be authenticated with `secret` or `token` and submited as `query parameter`. More detailed authentication methods are covered in [Authentication](https://www.convertapi.com/doc/auth) section. All supported [file format](https://www.convertapi.com/doc/supported-formats) conversions are provided here.
 
 ### Conversion using just URL
 
@@ -13,7 +13,7 @@ https://v2.convertapi.com/convert/web/to/pdf?download=inline&secret=XXX&url=http
 [response]
 PDF file contents displayed in a browser
 ```
-URL passed as a query parameter must be [percentage encoded](https://en.wikipedia.org/wiki/Percent-encoding) (from http://example.com to http%3A%2F%2Fexample.com).
+URL passed as a query parameter must be [percentage encoded](https://en.wikipedia.org/wiki/Percent-encoding) (e.g. http://example.com should be encoded as http%3A%2F%2Fexample.com).
 
 #### DOCX conversion to PDF example
 ```
@@ -24,7 +24,7 @@ https://v2.convertapi.com/convert/docx/to/pdf?download=inline&secret=XXX&file=ht
 [response]
 PDF file contents displayed in a browser
 ```
-More about GET method request conversions please read in [Virtual File Server](https://www.convertapi.com/doc/virtual-file-server) section.
+Learn more about GET method request conversions in [Virtual File Server](https://www.convertapi.com/doc/virtual-file-server) section.
 
 ### Conversion using JSON format
 #### DOC conversion to PDF using JSON
