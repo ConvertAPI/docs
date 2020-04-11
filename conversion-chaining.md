@@ -1,6 +1,6 @@
-Converted files that are stored on convertapi.com server can be accessible for further conversion operations. This method allows conversion chaining, without increased network load. Example: conversion PDF to JPG produces as many files as there are pages in PDF file. If these files are stored on the server and links to the files are passed to ZIP converter, result will be one ZIP file with JPG files of each PDF page. The `StoreFile=true` parameter must be set when calling conversion endpoint.
+Converted files that are stored on the convertapi.com server can be accessed for further conversion operations. This method allows conversion chaining, without increased network load. Example: conversion PDF to JPG produces as many files as there are pages in PDF file. If these files are stored on the server and links to the files are passed to the ZIP converter, the result will be a single ZIP archive with JPG files of each PDF page. The `StoreFile=true` parameter must be set when calling the conversion endpoint.
 
-The example below converts PDF to JPG and store result files on server for chaining.
+The example below converts a PDF to JPG and stores the result on a server for chaining.
 
 ### Convert PDF to JPG - chain #1
 ```
@@ -45,7 +45,7 @@ https://v2.convertapi.com/convert/pdf/to/jpg?Secret=XXX
     ]
 }
 ```
-Now we can get all result files from above response and send them to ZIP using example below.
+Now we can get all result files from the above response and send them to a ZIP endpoint using the example below.
 ### ZIP all JPG files - chain #2
 ```
 [POST] 
