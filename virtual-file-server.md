@@ -1,4 +1,4 @@
-ConvertAPI can be used as a virtual file server for all your files or web pages that need to be converted. The file is being converted on-demand when a user clicks on the link. The result can be displayed in a web browser or downloaded.
+ConvertAPI can be used as a virtual file server for all your files or web pages that need to be converted. The file is being converted on-demand whenever user clicks on the link. The result can be displayed in a web browser or downloaded.
 
 ### Parameter "download"
 
