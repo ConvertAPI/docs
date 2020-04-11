@@ -1,8 +1,8 @@
-In this documentation section are covered all content types and schemes that are supported by ConvertAPI.
+All content types and schemes that are supported by ConvertAPI are covered in this documentation section.
 
 ## Request
 ### application/json
-File data must be encoded with Base64 encoding, provided as URL or uploaded File ID.
+File data must be encoded with Base64 encoding, provided as a URL or uploaded File ID.
 
 #### DOC to PDF example
 ```
@@ -53,7 +53,7 @@ https://v2.convertapi.com/convert/pdf/to/merge?Secret=XXX
 }
 ```
 ### multipart/form-data
-Each request parameter must be in separate part. If there is an array type parameter, index must be appended to parameter name e.g. Files[0], Files[1], Files[2] etc.
+Each request parameter must be specified in a separate part. If there is an array type parameter, the index must be appended to a parameter name e.g. Files[0], Files[1], Files[2], etc.
 #### DOC to PDF example
 ```
 [POST] 
@@ -76,27 +76,27 @@ Test title
 ------7MA4YWxkTrZu0gW--
 ```
 #### application/octet-stream
-Most bandwidth efficient way to convert file is to pass file content as a request body. Also this content type could be used for stream processing. Request header must contain field `Content-Disposition: attachment; filename="my_file.doc"` with the file name and correct file extension. Conversion parameters can be set throw URL query.
+The most bandwidth-efficient way to convert a file is to pass file content as a request body. This content type could also be used for stream processing. The request header must contain the `Content-Disposition: attachment; filename="my_file.doc"` field with the file name and correct file extension. Conversion parameters can be set through the URL query.
 
 ### Query parameters
-Using query parameters it is possible to convert file which is accessible by URL or uploaded File ID.
+It is possible to convert a file that is accessible by URL or uploaded File ID using query parameters.
 
 DOCX to PDF example
 ```
 [GET/POST]
 https://v2.convertapi.com/convert/docx/to/pdf?Secret=XXX&File=http://example.com/myfile.docx&StoreFile=true
 ```
-If there is an array type parameter, index must be appended to parameter name e.g. Files[0], Files[1], Files[2] etc.
+If there is an array type parameter, the index must be appended to parameter name e.g. Files[0], Files[1], Files[2], etc.
 
 ## Response
 
-Response headers and body contains this information:
+Response headers and body contain this information:
 
-* `ConversionTime` - time in seconds that took to convert file. In this amount of seconds your balance will be decreased after conversion.
-* `FileName` - name of converted file.
+* `ConversionTime` - time in seconds that took to convert the file. This amount of seconds will be deducted from your balance after the conversion.
+* `FileName` - name of the converted file.
 * `FileSize` - converted file size in bytes.
 * `FileData` - converted file content.
-* `FileUrl` - link to converted file if `StoreFile` parameter is set to `true`.
+* `FileUrl` - link to a converted file if `StoreFile` parameter was set to `true`.
 
 ### application/json
 Single file result example
@@ -114,7 +114,7 @@ Single file result example
 }
 ```
 ### application/xml
-XML scheme is analogous to JSON.
+XML scheme structure is analogous to JSON.
 ```
 <Conversion xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
 <ConversionTime>2</ConversionTime>
@@ -144,4 +144,4 @@ Content-Disposition: attachment; filename="my_file.pdf"; size=8475
 --43cf1475-ab15-4c6b-b5ee-e2cbcedfe92f--
 ```
 ### application/octet-stream
-Response body is result file content. File name can be found in `content-disposition` header field. Can be used with converters that produce only one file result.
+The response body is a result of converted file content. The filename can be found in `content-disposition` header field. It can be used with converters that produce a single file result.
