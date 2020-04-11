@@ -1,4 +1,4 @@
-Endpoint returns information about your account. Useful to check account balance status.
+The endpoint that returns information about your user account. It is useful to check the account balance status.
 
 ### User information request example
 ```
