@@ -29,7 +29,7 @@ Create a new project and select “Console APP” (.NET Core)”. Set the path t
 
 ![Simple "Hello world" app](https://user-images.githubusercontent.com/62603039/77763796-496a1f00-7044-11ea-8246-e7b8213f95a5.png)
 
-We will then have to add a ConvertAPI NuGet package to the project. To do that, navigate to **Menu > Project > Manage NuGet Packages…** Click on **Browse** and search for “ConvertAPI” NuGet package. Press the Install button. That’s it, there you have it!
+We will then have to add a [ConvertAPI NuGet package](https://www.nuget.org/packages/ConvertApi/) to the project. To do that, navigate to **Menu > Project > Manage NuGet Packages…** Click on **Browse** and search for “ConvertAPI” NuGet package. Press the Install button. That’s it, there you have it!
 
 ![ConvertAPI NuGet package](https://user-images.githubusercontent.com/62603039/77763863-656dc080-7044-11ea-91cc-b8eba344378c.png)
 
