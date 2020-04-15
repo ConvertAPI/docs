@@ -62,7 +62,8 @@
     {
     "date":"2018-06-13",
     "label":"feature",
-    "description":"EBook AZ3W conversion to pdf added."
+    "description":"Try our new E-Book (azv, epub, mobi, prc, tpz) Rest API which can convert e-book formats to PDF and images.",           ,
+    "url":"https://www.convertapi.com/ebooks-api"
   },
   {
     "date":"2011-07-13",
