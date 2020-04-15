@@ -1,4 +1,26 @@
-[
+[               {
+    "date":"2020-01-10",
+    "label":"feature",
+    "description":"Simple file conversion from the command line in Linux, Windows or Mac OS. ConvertAPI Command Line Utility (CLI).",
+    "url":"https://www.convertapi.com/doc/cli-library"
+  },
+                     {
+    "date":"2020-01-03",
+    "label":"feature",
+    "description":"iWork Keynote to PNG, JPG and Tiff API added",
+    "url":"https://www.convertapi.com/apple-iwork-api"
+  },
+                 {
+    "date":"2019-12-16",
+    "label":"feature",
+    "description":"Added support for PDF/A-3b version."
+  },
+                 {
+    "date":"2019-06-14",
+    "label":"feature",
+    "description":"Added two new conversions - HEIC image to PDF and Images.",
+    "url":"https://www.convertapi.com/doc/supported-formats"
+  },
           {
     "date":"2019-01-24",
     "label":"feature",
