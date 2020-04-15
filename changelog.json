@@ -1,4 +1,10 @@
 [
+                    {
+    "date":"2018-10-26",
+    "label":"feature",
+    "description":"Thumbnail generator added for PDF, create thumbnails in no time.",
+    "url":"https://www.convertapi.com/pdf-to-thumbnail"
+  },
             {
     "date":"2018-06-20",
     "label":"integration",
