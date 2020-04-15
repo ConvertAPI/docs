@@ -1,4 +1,10 @@
 [
+          {
+    "date":"2019-01-24",
+    "label":"feature",
+    "description":"Convert Word to TXT file, extract text from any Word document.",
+    "url":"https://www.convertapi.com/docx-to-txt"
+  },
                     {
     "date":"2018-10-26",
     "label":"feature",
