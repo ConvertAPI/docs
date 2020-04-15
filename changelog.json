@@ -1,0 +1,30 @@
+[
+  {
+    "date":"2020-03-05",
+    "label":"feature",
+    "description":"New image processing conversion has been added.",
+    "url":"https://www.google.com"
+  },
+  {
+    "date":"2020-03-02",
+    "label":"bug fix",
+    "description":"Small issue has been fixed."
+  },
+  {
+    "date":"2020-03-01",
+    "label":"feature",
+    "description":"New image processing conversion has been added.",
+    "url":"https://www.google.com"
+  },
+    {
+    "date":"2019-03-02",
+    "label":"bug fix",
+    "description":"Small issue has been fixed."
+  },
+  {
+    "date":"2019-03-01",
+    "label":"feature",
+    "description":"New image processing conversion has been added.",
+    "url":"https://www.google.com"
+  }
+]
