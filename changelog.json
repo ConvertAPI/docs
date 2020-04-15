@@ -1,14 +1,15 @@
 [
   {
-    "date":"2020-03-05",
+    "date":"2018-11-15",
     "label":"feature",
-    "description":"New image processing conversion has been added.",
-    "url":"https://www.google.com"
+    "description":"Integration with Zapier - create conversion workflow easily.",
+    "url":"https://www.convertapi.com/labs/zapier"
   },
   {
-    "date":"2020-03-02",
-    "label":"bug fix",
-    "description":"Small issue has been fixed."
+    "date":"2020-02-24",
+    "label":"feature",
+    "description":"We're very excited to reveal our shiny new website and logo.",
+    "url":"https://www.convertapi.com"
   },
    {
     "date":"2016-07-05",
