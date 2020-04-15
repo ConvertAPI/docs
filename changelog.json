@@ -1,4 +1,22 @@
 [
+    {
+    "date":"2018-07-24",
+    "label":"feature",
+    "description":"The PDF Compress API shrinks and makes smaller PDF files up to 6X times!",
+    "url":"https://www.convertapi.com/pdf-to-compress"
+  },
+      {
+    "date":"2019-06-12",
+    "label":"feature",
+    "description":"PDF to OCR API. Add a textual layer to a scanned PDF document.",
+    "url":"https://www.convertapi.com/pdf-to-ocr"
+  },
+    {
+    "date":"2019-06-12",
+    "label":"integration",
+    "description":"The ConvertAPI public status page has been added.",
+    "url":"https://status.convertapi.com"
+  },
   {
     "date":"2018-11-15",
     "label":"integration",
