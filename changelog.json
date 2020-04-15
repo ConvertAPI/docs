@@ -1,9 +1,21 @@
 [
+            {
+    "date":"2018-06-20",
+    "label":"integration",
+    "description":"Happy Summer! Ruby Gem for the ConvertAPI is now easy to grab at GitHub.",
+    "url":"https://www.convertapi.com/doc/ruby-library"
+  },
+         {
+    "date":"2018-06-22",
+    "label":"feature",
+    "description":"Now you can rotate PDF with one simple Rest API call.",
+    "url":"https://www.convertapi.com/pdf-to-rotate"
+  },
        {
-    "date":"2018-06-9",
+    "date":"2018-06-09",
     "label":"integration",
     "description":"Happy Spring! .NET ConvertAPI API library is now easy to grab at NuGet",
-    "url":"https://www.nuget.org/packages/ConvertApi"
+    "url":"https://www.convertapi.com/doc/dotnet-library"
   },
       {
     "date":"2018-01-31",
