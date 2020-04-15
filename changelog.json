@@ -1,4 +1,22 @@
 [
+       {
+    "date":"2018-06-9",
+    "label":"integration",
+    "description":"Happy Spring! .NET ConvertAPI API library is now easy to grab at NuGet",
+    "url":"https://www.nuget.org/packages/ConvertApi"
+  },
+      {
+    "date":"2018-01-31",
+    "label":"integration",
+    "description":"New feature 'PDF Button' will allow your site visitors to convert web page to PDF or image. Integration is just 3 lines of HTML code.",
+    "url":"https://www.convertapi.com/labs/pdf-button"
+  },
+    {
+    "date":"2018-01-31",
+    "label":"feature",
+    "description":"Now you can reset the secret if needed! Generate new one at any time if old has been lost.",
+    "url":"https://www.convertapi.com/a"
+  },
     {
     "date":"2018-07-24",
     "label":"feature",
