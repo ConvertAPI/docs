@@ -10,21 +10,26 @@
     "label":"bug fix",
     "description":"Small issue has been fixed."
   },
-  {
-    "date":"2020-03-01",
+   {
+    "date":"2016-07-05",
     "label":"feature",
-    "description":"New image processing conversion has been added.",
-    "url":"https://www.google.com"
+    "description":"OXPS file conversion to images added.",
+    "url":"https://www.convertapi.com/oxps-to-jpg"
+  },
+  {
+    "date":"2016-07-05",
+    "label":"feature",
+    "description":"OXPS file conversion to pdf added.",
+    "url":"https://www.convertapi.com/oxps-to-pdf"
   },
     {
-    "date":"2019-03-02",
-    "label":"bug fix",
-    "description":"Small issue has been fixed."
+    "date":"2018-06-13",
+    "label":"feature",
+    "description":"EBook AZ3W conversion to pdf added."
   },
   {
-    "date":"2019-03-01",
+    "date":"2011-07-13",
     "label":"feature",
-    "description":"New image processing conversion has been added.",
-    "url":"https://www.google.com"
+    "description":"The ConvertAPI born."
   }
 ]
