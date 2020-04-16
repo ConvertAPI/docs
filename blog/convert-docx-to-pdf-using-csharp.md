@@ -79,7 +79,7 @@ namespace WordToPdf
 }
 ```
 
-All the magic is done by line convertapi.ConvertFile(docxFile, pdfFile); which takes word documents and converts them to PDF.
+All the magic is done by line ```convertapi.ConvertFile(docxFile, pdfFile);``` which takes word documents and converts them to PDF.
 
 ![Converted results](https://user-images.githubusercontent.com/62603039/77894058-6c334800-727d-11ea-8163-fd88309e9ff8.png)
 
