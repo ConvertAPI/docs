@@ -1,4 +1,17 @@
-[               {
+[     
+       {
+    "date":"2020-04-29",
+    "label":"feature",
+    "description":"RetainNumbering property added. Keeps the original PDF documents numbering rather than re-numbering merged PDF from the 1 page.",
+    "url":"https://www.convertapi.com/pdf-to-merge"
+  },
+       {
+    "date":"2020-04-29",
+    "label":"feature",
+    "description":"RemoveDuplicateFonts property added. Do not include the same fonts from source PDFs while merging.",
+    "url":"https://www.convertapi.com/pdf-to-merge"
+  },
+    {
     "date":"2020-01-10",
     "label":"feature",
     "description":"Simple file conversion from the command line in Linux, Windows or Mac OS. ConvertAPI Command Line Utility (CLI).",
