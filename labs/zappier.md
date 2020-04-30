@@ -9,7 +9,7 @@
 
 ```
 <decode>
-    <script src="https://zapier.com/apps/embed/widget.js?services=convertapi"></script>
+    <script src="https://zapier.com/apps/embed/widget.js?services=convertapi&limit=7"></script>
 </decode>
 ```
 
