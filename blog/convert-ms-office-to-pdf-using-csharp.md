@@ -4,15 +4,15 @@ While searching for the solution I saw too many developers going mad in stackove
 Finally I gave up and decided to write my own file processor that I could share with all of you who struggle with it. 
 My goal was a tool that makes the conversion of multiple MS Office documents to PDF simple and quick. And here comes the ConvertAPI library.
 
-## Choosing the right MS Office to PDF REST API converter is simple.
+## Choosing the right MS Office to PDF REST API converter is simple
 
-We are going to use ConvertAPI Office to PDF Rest API services to convert your files hosted on a server. 
+We are going to use ConvertAPI Office to PDF Rest API service to convert your files hosted on a server. 
 If you need to convert your files from a local directory, [here is a great article describing it](https://www.convertapi.com/blog/convert-docx-to-pdf-using-csharp).
 
 ## Let’s begin...
 
-First of all, we need to go and register to get your FREE account at the ConvertAPI.com website https://www.convertapi.com/a. 
-The registration process is intuitive and straightforward, you can use our quick sign up feature using your social account.
+First of all, you need to register to get your FREE account at the ConvertAPI.com website https://www.convertapi.com/a. 
+The registration process is intuitive and straightforward, you can use a quick sign up feature using your social account.
 
 Once signed in, you will find your Secret Key in the dashboard. Keep this key within reach, we will need this shortly.
 
@@ -29,13 +29,13 @@ Create a new project and select “Console APP” (.NET Core)”. Once done, a n
 ![Simple "Hello world" app](https://user-images.githubusercontent.com/62603039/77763796-496a1f00-7044-11ea-8246-e7b8213f95a5.png)
 
 We will then have to add a [ConvertAPI NuGet package](https://www.nuget.org/packages/ConvertApi/) to the project. 
-You can either do that using NuGet Package Manager or NuGet Package Manager Console:
+You can either do that using NuGet Package Manager or NuGet Package Manager Console: ```Install-Package ConvertApi```
 
-```Install-Package ConvertApi```
+![NuGet package](https://user-images.githubusercontent.com/62603039/77763863-656dc080-7044-11ea-91cc-b8eba344378c.png)
 
 You can find the source on GitHub if needed ([https://github.com/ConvertAPI/convertapi-dotnet](https://github.com/ConvertAPI/convertapi-dotnet)).
 
-## The project is ready for MS Office to pdf implementation using C#
+## The project is ready for MS Office to PDF implementation using C#
 
 Let’s write a simple program MS Office to PDF in C# that converts all files placed on the server into PDFs. 
 
@@ -89,4 +89,6 @@ The API supports many more properties, complete list can be found at https://www
 ## Conclusion
 
 File conversions and manipulations are not a headache anymore. This API supports not just MS Office file formats like DOCX, XLSX, PPTX, but eBooks, iWork, emails, images and more. You can just sit back and watch the job done for you. 
-We keep our library supported and up to date. For this example we used [ConvertAPI NuGet package](https://www.nuget.org/packages/ConvertApi/). Feel free to collaborate on our ([Git repository](https://github.com/ConvertAPI/convertapi-dotnet))!
+We keep our library supported and up to date. For this example we used [ConvertAPI NuGet package](https://www.nuget.org/packages/ConvertApi/). 
+
+Feel free to collaborate on our [Git repository](https://github.com/ConvertAPI/convertapi-dotnet)!
