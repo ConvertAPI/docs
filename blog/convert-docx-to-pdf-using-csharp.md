@@ -1,15 +1,17 @@
-Converting DOCX to PDF might be a tricky process sometimes. Especially if you want to convert multiple DOCX files at once. Most of the desktop software doesn’t give you this kind of functionality and you can only convert files one by one. What if I told you that in just a few easy steps you could code your own batch DOCX to PDF converter using C#? Sounds complicated? Well, it’s really way easier than it sounds! I will explain the process in a few simple steps:
+When I started using .NET Core framework I found that document conversions from one file format to another are extremely tricky. Whilst digging the web I noticed many people losing their heads about it and no simple solution that suits all. Until I found this! The answer is ConvertAPI. 
 
-## Choosing the right Word to PDF REST API converter
+I was stunned by how easy it is to convert multiple DOCX files to PDF at once with ConvertAPI. If you develop your code in C#, I’m sure this will be simpler than it sounds. I will explain the process in a few simple steps:
 
-For this task we will use ConvertAPI DOCX to PDF Rest API service. Here are the main reasons for it:
+## What exactly is ConvertAPI?
+
+Choosing the right Word to PDF REST API converter is simple. As mentioned above, we will use ConvertAPI DOCX to PDF Rest API service. Here are the main reasons for it:
 
 * No need to have MS Office installed
 * Blazing fast docx to pdf conversions
 * Convert word to pdf C# without Word interop
 * Saving dozens of lines of code, only a couple of C# methods
 * No need to rent/buy and maintain servers
-* It provides a fully functional free version!
+* It provides a fully functional FREE version!
 
 ## Let’s begin...
 
@@ -118,7 +120,7 @@ namespace WordToPdf
 
 ## Conclusion
 
-There is a really simple and neat way of converting multiple Word documents into PDF file formats while leaving all the ugly work for ConvertAPI processor. From now on, you simply need to copy your documents into that specified input directory and retrieve the converted results instantly! It really can be set up in less than few minutes, watch a video below and see it in action. In this article we used 
+There is a really simple and neat way of converting multiple Word documents into PDF file formats while leaving all the ugly work for ConvertAPI processor. This API supports not only MS Office file formats like DOCX, XLSX, PPTX, but eBooks, iWork, emails, images and much more. From now on, you simply need to copy your documents into that specified input directory and retrieve the converted results instantly! It really can be set up in less than few minutes, watch a video below and see it in action. In this article we used 
 [ConvertAPI NuGet package](https://www.nuget.org/packages/ConvertApi/) ([Git repository](https://github.com/ConvertAPI/convertapi-dotnet)). Try live demo and read more about conversion parameters at https://www.convertapi.com/docx-to-pdf.
 
 That’s it folks, hope you find it helpful!
