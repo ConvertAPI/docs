@@ -1,10 +1,10 @@
-When I started using .NET Core framework I found that document conversions from one file format to another are extremely tricky. Whilst digging the web I noticed many people losing their heads about it and no simple solution that suits all. Until I found this! The answer is ConvertAPI. 
+When I started using .NET Core framework, I found that document conversions from one file format to another are incredibly tricky. While digging the web, I noticed many people losing their heads about it and no simple solution that suits all. Most of the approaches I found were clumsy and outdated, so I came up with the decision to write my own conversion processor. Since there are so many developers struggling with this issue, I thought it would get me some extra karma points to share it and make it widely accessible. And that's how the ConvertAPI was born.
 
-I was stunned by how easy it is to convert multiple DOCX files to PDF at once with ConvertAPI. If you develop your code in C#, I’m sure this will be simpler than it sounds. I will explain the process in a few simple steps:
+Maximum efforts were put to craft a tool that makes the conversion of multiple DOCX files to PDF at once intuitive and straightforward. If you develop your code in C#, I'm sure this will be simpler than it sounds. I will explain the process in a few simple steps:
 
 ## What exactly is ConvertAPI?
 
-Choosing the right Word to PDF REST API converter is simple. As mentioned above, we will use ConvertAPI DOCX to PDF Rest API service. Here are the main reasons for it:
+Choosing the right Word to PDF REST API converter is simple. As mentioned above, we will discuss ConvertAPI DOCX to PDF Rest API service. Here are the strengths and features of ConvertAPI:
 
 * No need to have MS Office installed
 * Blazing fast docx to pdf conversions
