@@ -1,19 +1,21 @@
-When it comes to .NET Core, the document conversions between different file formats are extremely puzzling and complicated.
-While searching for the solution I saw too many developers going mad in stackoverflow trying to wrap their heads around it.
+# Convert MS Office documents to PDF using C#
 
-Finally I gave up and decided to write my own file processor that I could share with all of you who struggle with it. 
-My goal was a tool that makes the conversion of multiple MS Office documents like .docx, .xlsx, .pptx and more to PDF simple and quick. And here comes the ConvertAPI REST API service that has a C# library.
+When it comes to .NET Core, the document conversions between different file formats are extremely puzzling and complicated.
+While searching for the solution, I saw too many developers going mad in StackOverflow, trying to wrap their heads around it.
+
+Finally, I gave up and decided to write my own file processor that I could share with all of you who struggle with it. 
+My goal was a tool that makes the conversion of multiple MS Office documents like .docx, .xlsx, .pptx, and more to PDF simple and quick. And here comes the ConvertAPI REST API service that has a C# library.
 
 ## Choosing the right MS Office to PDF REST API converter is simple
 
-We are going to use ConvertAPI Office to PDF Rest API service to convert either your local files or files that are hosted on a separate server by passing the file URLs. You can also easily apply document manipulations like merge, split, rotate, encrypt your source files as well as the converted file result.
+We are going to use ConvertAPI Office to PDF Rest API service to convert either your local files or files that are hosted on a separate server by specifying the file URLs. You can also easily apply document manipulations like merge, split, rotate, encrypt your source files as well as the converted file result.
 
 ## Let’s begin...
 
 First of all, you need to register to get your FREE account at the ConvertAPI.com website https://www.convertapi.com/a. 
-The registration process is intuitive and straightforward, you can use a quick sign up feature using your social account.
+The registration process is intuitive and straightforward. You can use a quick sign up feature using your social account.
 
-Once signed in, you will find your Secret Key in the dashboard. Keep this key within reach, we will need this shortly.
+Once signed in, you will find your Secret Key in the dashboard. Keep this key within reach - we will need this shortly.
 
 ![Retrieve secret](https://user-images.githubusercontent.com/62603039/77777970-f6e72d80-7058-11ea-94d8-6b7f7fe01318.png)
 
@@ -38,7 +40,7 @@ You can find the source on GitHub if needed ([https://github.com/ConvertAPI/conv
 
 Let’s write a simple program MS Office to PDF in C# that converts all files placed on the server into PDFs. 
 
-We will start writing our code by initializing the ConvertApi library and specifying the **secret** that we got from ConvertAPI.com website.
+We will start writing our code by initializing the ConvertApi library and specifying the **secret** that we got from the ConvertAPI.com website.
 
 ```csharp
 var convertapi = new ConvertApi("YOUR_SECRET_HERE");
@@ -80,8 +82,8 @@ namespace MsOfficeToPdf
 }
 ```
 
-All the hard work is done by ```convertapi.ConvertAsync();``` method that takes any MS Office document and converts it to PDF. The "*" is a wildcard for input file format. You can specify file format explicitly but that is not necessary.
-The method has plenty overloads for your convenience. You can either pass a file from your local drive instead of URL, run the method synchronously, change destination file format or even specify advanced conversion parameters.
+All the hard work is done by ```convertapi.ConvertAsync();``` method that takes any MS Office document and converts it to PDF. The "*" is a wildcard for the input file format. You can specify file format explicitly, but that is not necessary.
+The method has plenty of overloads for your convenience. You can either pass a file from your local drive instead of URL, run the method synchronously, change the destination file format, or even specify advanced conversion parameters.
 The API supports many more properties, complete list can be found at https://www.convertapi.com/ms-office-api.
 
 You can also convert your local files from your machine by using the following code snippet:
@@ -100,7 +102,7 @@ You can also convert your local files from your machine by using the following c
 
 ## Conclusion
 
-File conversions and manipulations are not a headache anymore. This API supports not just MS Office file formats like DOCX, XLSX, PPTX, but eBooks, iWork, emails, images and more. You can just sit back and watch the job done for you. 
-We keep our library supported and up to date. For this example we used [ConvertAPI NuGet package](https://www.nuget.org/packages/ConvertApi/). 
+File conversions and manipulations are not a headache anymore. The API supports not just MS Office file formats like DOCX, XLSX, PPTX, but eBooks, iWork, emails, images, and more. You can just sit back and watch the job done for you. 
+We keep our library supported and up to date. For this example, we used [ConvertAPI NuGet package](https://www.nuget.org/packages/ConvertApi/). 
 
 Feel free to collaborate on our [Git repository](https://github.com/ConvertAPI/convertapi-dotnet)!
