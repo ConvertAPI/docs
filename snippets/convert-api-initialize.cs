@@ -1,1 +1,0 @@
-var convertapi = new ConvertApi("YOUR_SECRET_HERE");
