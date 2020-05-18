@@ -13,11 +13,11 @@ This simple data flow diagram below describes the process of the real-world exam
 Conversion chaining improves the performance and provides you the flexibility to process your file conversions step by step. 
 This way, you gain the ability to handle all of the exceptions you might encounter at any point during the conversion flow. 
 This best-practice driven REST API pattern allows you to continue the communication from where it failed without the need to rerun the whole process again. 
-Sounds complicated? It's actually more straightforward than it sounds. Let's dive into a real-world example!
+Sounds complicated? It's actually more straightforward than it sounds. Let's dive into a real-world demo!
 
 ## Real-world example
 
-For this demo we will use a pretty common PDF to JPG conversion example. This conversion produces multiple files as 
+For this demonstration we will use a pretty common PDF to JPG conversion example. This conversion produces multiple files as 
 each PDF page is split into a separate JPEG image. Let's say you want to ZIP the images into a single archive and download it. 
 You can achieve that by uploading a single file and specifying further conversions.
 
