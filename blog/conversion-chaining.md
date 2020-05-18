@@ -21,9 +21,10 @@ For this demonstration we will use a pretty common PDF to JPG conversion example
 each PDF page is split into a separate JPEG image. Let's say you want to ZIP the images into a single archive and download it. 
 You can achieve that by uploading a single file and specifying further conversions.
 
-All of our libraries support this feature. Let's use PHP language for this particular example.
+Let's use PHP language for this particular example, although all of our libraries support this feature. 
 For other programming languages, please refer to [our Docs](https://www.convertapi.com/doc/chaining).
-Please note that the StoreFile=true parameter must be set when calling the conversion endpoint to store the file on our server for further processing.
+
+Please note that the ```StoreFile=true``` parameter must be set when calling the conversion endpoint to store the file on our server for further processing.
 
 ```php
 <?php
