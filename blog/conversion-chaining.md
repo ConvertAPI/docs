@@ -1,0 +1,70 @@
+One of our feature-rich file conversion service advantages is conversion chaining. 
+We've seen so many services implementing it in the anti-pattern ways that make the code smelly and hardly reusable.
+
+We solved the issue by what is called a REST API Conversion Chaining. 
+It simply means applying multiple conversions and file manipulations by making a single file upload to our server and processing the file(-s) 
+via REST API calls. There is no need to download a partial result and upload it again. 
+The simple data flow diagram below describes the process of the real-world example we will discuss in just a bit.
+
+![Data flow diagram](https://user-images.githubusercontent.com/62603039/82210296-74bc0c80-9917-11ea-9164-eb951413eea0.png)
+
+## Why use conversion chaining?
+
+Conversion chaining improves the performance and provides you the flexibility to process the workflow neatly and elegantly. 
+This way, you gain the ability to handle any exceptions you might encounter at any point during the conversion flow. 
+The best-practice driven REST API pattern allows you to continue the communication from where it failed without the need to restart the process from scratch. 
+Sounds complicated? It's actually more straightforward than it sounds. Let's dive into a real-world example!
+
+## Real-world example
+
+Let's take a pretty common PDF to JPG conversion example. This conversion produces multiple files as a result. 
+Each PDF page is split into a separate JPEG image. Let's say you want to ZIP the images into a single archive and download it. 
+You can achieve that by uploading a single file and specifying further conversions.
+
+For this particular example, we will use PHP language. All of our libraries support this feature. 
+For other programming languages, please refer to [our Docs](https://www.convertapi.com/doc/chaining).
+Please note that the StoreFile=true parameter must be set when calling the conversion endpoint to store the file on our server for further processing.
+
+```php
+<?php
+require __DIR__ . '/../lib/ConvertApi/autoload.php';
+
+use \ConvertApi\ConvertApi;
+
+# set your API secret
+ConvertApi::setApiSecret(getenv('CONVERT_API_SECRET'));
+
+# Short example of conversions chaining, the PDF pages extracted and saved as separated JPGs and then ZIP'ed
+# https://www.convertapi.com/doc/chaining
+
+$dir = sys_get_temp_dir();
+
+echo "Converting PDF to JPG and compressing result files with ZIP\n";
+
+$jpgResult = ConvertApi::convert('jpg', ['File' => 'files/test.pdf']);
+
+$cost = $jpgResult->getConversionCost();
+$count = count($jpgResult->getFiles());
+
+echo "Conversions done. Cost: ${cost}. Total files created: ${count}\n";
+
+$zipResult = ConvertApi::convert('zip', ['Files' => $jpgResult->getFiles()]);
+
+$cost = $zipResult->getConversionCost();
+$count = count($zipResult->getFiles());
+
+echo "Conversions done. Cost: ${cost}. Total files created: ${count}\n";
+
+$savedFiles = $zipResult->saveFiles($dir);
+
+echo "File saved to\n";
+
+print_r($savedFiles);
+```
+
+## Conclusion
+
+To put it in a nutshell, conversion changing is the best practice for processing documents with the performance and flexibility perks. 
+It is implemented in all of our libraries. Use this approach to make the most out of our REST API conversion service! 
+Read more about conversion chaining in our [Documentation](https://www.convertapi.com/doc/chaining). Happy coding!
+
