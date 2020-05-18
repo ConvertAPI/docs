@@ -12,7 +12,7 @@ This simple data flow diagram below describes the process of the real-world exam
 
 Conversion chaining improves the performance and provides you the flexibility to process your file conversions step by step. 
 This way, you gain the ability to handle all of the exceptions you might encounter at any point during the conversion flow. 
-The best-practice driven REST API pattern allows you to continue the communication from where it failed without the need to rerun the whole process again. 
+This best-practice driven REST API pattern allows you to continue the communication from where it failed without the need to rerun the whole process again. 
 Sounds complicated? It's actually more straightforward than it sounds. Let's dive into a real-world example!
 
 ## Real-world example
