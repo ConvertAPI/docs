@@ -1,17 +1,17 @@
 One of our feature-rich conversion service advantages is conversion chaining. 
-We've seen so many services implementing it in wrong, anti-pattern ways that make the code smelly and hardly reusable.
+We've seen so many services implementing it in wrong, anti-pattern ways that make the code slow and hardly reusable.
 
 We solved this issue by what we call a REST API Conversion Chaining. 
-It simply means applying multiple conversions and file manipulations by making a single file upload to our server and processing the file(-s) 
-via REST API calls. There is no need to download a partial result and reupload it. 
-The simple data flow diagram below describes the process of the real-world example we will discuss in a moment.
+It simply means applying multiple conversions to a file uploaded to our server by calling the appropriate conversion methods 
+via REST API. There is no need to download a partial result and reupload it. 
+This simple data flow diagram below describes the process of the real-world example we will discuss in a moment.
 
 ![Data flow diagram](https://user-images.githubusercontent.com/62603039/82210296-74bc0c80-9917-11ea-9164-eb951413eea0.png)
 
 ## Why use conversion chaining?
 
-Conversion chaining improves the performance and provides you the flexibility to process your files appropriately. 
-This way, you gain the ability to handle any exceptions you might encounter at any point during the conversion flow. 
+Conversion chaining improves the performance and provides you the flexibility to process your file conversions step by step. 
+This way, you gain the ability to handle all of the exceptions you might encounter at any point during the conversion flow. 
 The best-practice driven REST API pattern allows you to continue the communication from where it failed without the need to rerun the whole process again. 
 Sounds complicated? It's actually more straightforward than it sounds. Let's dive into a real-world example!
 
