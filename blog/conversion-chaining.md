@@ -33,7 +33,7 @@ Promise.all(pdfs).then(p => convertapi.convert('merge', { Files: p }))
   .then(r => r.file.save('merged.pdf'))
 ```
 
-Run this [code snippet on Repl.it](https://repl.it/@ConvertAPI/JPG-greater-PDF-greater-MERGE)
+Run this [code snippet](https://repl.it/@ConvertAPI/JPG-greater-PDF-greater-MERGE) on Repl.it
 
 ## Conclusion
 
