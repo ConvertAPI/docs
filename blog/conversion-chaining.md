@@ -3,9 +3,7 @@ We've seen so many services implementing it in wrong, anti-pattern ways that mak
 
 We solved this issue by what we call a REST API Conversion Chaining. 
 It simply means applying multiple conversions to a file uploaded to our server by calling the appropriate conversion methods 
-via REST API. There is no need to download a partial result and reupload it. 
-
-The data flow diagram below describes the process of the real-world example we will discuss in a moment.
+via REST API. There is no need to download a partial result and reupload it. The data flow diagram below describes the process of the real-world example we will discuss in a moment.
 
 ![Data flow diagram](https://user-images.githubusercontent.com/62603039/82210296-74bc0c80-9917-11ea-9164-eb951413eea0.png)
 
