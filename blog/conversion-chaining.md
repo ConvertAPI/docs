@@ -33,6 +33,8 @@ Promise.all(pdfs).then(p => convertapi.convert('merge', { Files: p }))
   .then(r => r.file.save('merged.pdf'))
 ```
 
+Run this [code snippet on Repl.it](https://repl.it/@ConvertAPI/JPG-greater-PDF-greater-MERGE)
+
 ## Conclusion
 
 To put it in a nutshell, conversion changing is the best practice for processing documents with the performance and flexibility perks. 
