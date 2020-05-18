@@ -20,46 +20,17 @@ For this demonstration we will use a pretty common PDF to JPG conversion example
 each PDF page is split into a separate JPEG image. Let's say you want to ZIP the images into a single archive and download it. 
 You can achieve that by uploading a single file and specifying further conversions.
 
-Let's use PHP language for this particular example, although all of our libraries support this feature. 
+Let's use Node.js for this particular example, although all of our libraries support this feature. 
 For other programming languages, please refer to [our Docs](https://www.convertapi.com/doc/chaining).
 
 Please note that the ```StoreFile=true``` parameter must be set when calling the conversion endpoint to store the file on our server for further processing.
 
-```php
-<?php
-require __DIR__ . '/../lib/ConvertApi/autoload.php';
-
-use \ConvertApi\ConvertApi;
-
-# set your API secret
-ConvertApi::setApiSecret(getenv('CONVERT_API_SECRET'));
-
-# Short example of conversions chaining, the PDF pages extracted and saved as separated JPGs and then ZIP'ed
-# https://www.convertapi.com/doc/chaining
-
-$dir = sys_get_temp_dir();
-
-echo "Converting PDF to JPG and compressing result files with ZIP\n";
-
-$jpgResult = ConvertApi::convert('jpg', ['File' => 'files/test.pdf']);
-
-$cost = $jpgResult->getConversionCost();
-$count = count($jpgResult->getFiles());
-
-echo "Conversions done. Cost: ${cost}. Total files created: ${count}\n";
-
-$zipResult = ConvertApi::convert('zip', ['Files' => $jpgResult->getFiles()]);
-
-$cost = $zipResult->getConversionCost();
-$count = count($zipResult->getFiles());
-
-echo "Conversions done. Cost: ${cost}. Total files created: ${count}\n";
-
-$savedFiles = $zipResult->saveFiles($dir);
-
-echo "File saved to\n";
-
-print_r($savedFiles);
+```javascript
+let convertapi = require('convertapi')(process.env.CONVERT_API_SECRET)
+let jpgPaths = ['first.jpg', 'second.jpg', 'third.jpg']
+let pdfs = jpgPaths.map(j => convertapi.convert('pdf', { File: `./images/${j}` }))
+Promise.all(pdfs).then(p => convertapi.convert('merge', { Files: p }))
+  .then(r => r.file.save('merged.pdf'))
 ```
 
 ## Conclusion
