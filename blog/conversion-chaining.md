@@ -9,17 +9,17 @@ There is no need to download a partial result and reupload it. The diagram below
 
 ## Why use conversion chaining?
 
-Conversion chaining not only improves the performance but also provides you the flexibility to manage your file conversions step by step. This way, you gain the ability to handle any exceptions that migh appear along the way. 
-This particular REST API pattern allows you to continue the communication from where it failed without the need to rerun the whole process again. Let's dive deep into a real-world demo!
+Conversion chaining not only improves the performance but also provides the flexibility to manage your file conversions step by step. This way, you gain the ability to handle any exceptions that migh occure along the way. 
+This particular REST API pattern allows you to continue the communication from where it failed without the need to rerun the whole process again. Now let's dive deep into a real-world demo!
 
 ## Real-world example
 
 For our demo we will use a pretty common PDF to JPG conversion example. This conversion produces multiple files as 
 each PDF page is split into a separate JPEG image. Let's say you want to ZIP the images into a single archive and download it. 
-You can achieve that by uploading a single file and specifying further conversions.
+You can achieve that by uploading a source file and specifying further conversions.
 
 We'll use Node.js for this particular example, although all of our libraries support this feature. 
-For other programming languages, please refer to [our Docs](https://www.convertapi.com/doc/chaining).
+For other programming languages, please refer to [our docs](https://www.convertapi.com/doc/chaining).
 
 Please note that the ```StoreFile=true``` parameter must be set when calling the conversion endpoint to store the file on our server for multiprocessing.
 
@@ -38,6 +38,6 @@ Run this [code snippet](https://repl.it/@ConvertAPI/JPG-greater-PDF-greater-MERG
 To put it in a nutshell, conversion changing is the best practice for processing documents with the performance and flexibility perks. 
 It is available in all of our libraries. Use this approach to write a clean, reusable and performance-oriented code! 
 
-Read more about conversion chaining in our [Documentation](https://www.convertapi.com/doc/chaining). 
+Read more about conversion chaining in our [documentation](https://www.convertapi.com/doc/chaining). 
 
 Happy coding!
