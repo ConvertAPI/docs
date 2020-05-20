@@ -5,7 +5,7 @@ We solved this issue by what we call a REST API Conversion Chaining.
 It simply means applying multiple conversions to a file uploaded to our server. You can process the file over and over again by calling appropriate conversion methods via REST API. 
 There is no need to download a partial result and reupload it. The diagram below describes the process of the real-world example we will discuss in a moment.
 
-![Data flow diagram](https://stag-www.convertapi.com/static/img/blog/conversion-chaining.png)
+![conversion chaining scheme](https://user-images.githubusercontent.com/62603039/82466879-9f4dc700-9ac9-11ea-92a2-72632eadf853.png)
 
 ## Why use conversion chaining?
 
