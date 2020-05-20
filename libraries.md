@@ -2,6 +2,7 @@ These libraries are maintained by the developers at ConvertAPI and are the easie
 
 - [Python](https://www.convertapi.com/doc/python-library)
 - [Node JS](https://www.convertapi.com/doc/node-library)
+- [JavaScript](https://github.com/ConvertAPI/convertapi-js)
 - [DotNet](https://www.convertapi.com/doc/dotnet-library)
 - [Java](https://www.convertapi.com/doc/java-library)
 - [PHP](https://www.convertapi.com/doc/php-library)
