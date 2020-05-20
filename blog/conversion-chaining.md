@@ -9,14 +9,14 @@ There is no need to download a partial result and reupload it. The diagram below
 
 ## Why use conversion chaining?
 
-Conversion chaining not only improves the performance but also provides the flexibility to manage your file conversions step by step. This way, you gain the ability to handle any exceptions that migh occure along the way. 
+Conversion chaining not only improves the performance but also provides the flexibility to manage your file conversions step by step. This way, you gain the ability to handle any exceptions that might occur along the way. 
 This particular REST API pattern allows you to continue the communication from where it failed without the need to rerun the whole process again. Now let's dive deep into a real-world demo!
 
 ## Real-world example
 
-For our demo we will use a pretty common JPG to PDF conversion example. This conversion produces multiple PDF files as 
-each JPG is converted to PDF. Let's say you want to ZIP the images into a single archive and download it. 
-You can achieve that by uploading a source file and specifying further conversions.
+For our demo, we will use a pretty common JPG to PDF conversion example. This conversion produces multiple PDF files as 
+each JPG is converted into PDF. Let's say you want to merge the PDFs into a single file and download it. 
+You can achieve that by uploading a bunch of source files and specifying further conversions.
 
 We'll use Node.js for this particular example, although all of our libraries support this feature. For other programming languages libraries, please refer to [our libraries](https://www.convertapi.com/doc/libraries). 
 
@@ -35,7 +35,7 @@ Promise.all(pdfs).then(p => convertapi.convert('merge', { Files: p }))
 
 Run this [code snippet](https://repl.it/@ConvertAPI/JPG-greater-PDF-greater-MERGE) on Repl.it
 
-ANother common real time example when usre wants to convert DOCX document to PDF, merge whem and finally encrypt that merged pdf with "testpassword" password.
+Another common example is to convert multiple DOCX documents into PDFs, merge them into a single PDF, and finally encrypt the merged result with a "testpassword" password.
 
 ```javascript
 let convertapi = require('convertapi')(process.env.CONVERT_API_SECRET)
@@ -54,14 +54,14 @@ Promise.all(pdfs)
 
 Run this [code snippet](https://repl.it/@ConvertAPI/Chaining-DOCX-to-PDF-then-MERGE-finally-ENCRYPT) on Repl.it
 
-The pure REST API chaining documentation can be found at [our docs](https://www.convertapi.com/doc/chaining).
+The pure REST API chaining documentation can be found in [our documentation](https://www.convertapi.com/doc/chaining) section.
 
-Please note that the ```StoreFile=true``` parameter must be set when calling the conversion endpoint directly not using library to store the file on our server for multiprocessing.
+Please note that the ```StoreFile=true``` parameter must be set when calling the conversion endpoint directly (not using any library) to store the file on our server for multiprocessing.
 
 ## Conclusion
 
 To put it in a nutshell, conversion changing is the best practice for processing documents with the performance and flexibility perks. 
-It is available in all of our libraries. Use this approach to write a clean, reusable and performance-oriented code! 
+It is available in all of our libraries. Use this approach to write a clean, reusable, and performance-oriented code! 
 
 Read more about conversion chaining in our [documentation](https://www.convertapi.com/doc/chaining). 
 
