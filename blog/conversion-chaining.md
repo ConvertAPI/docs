@@ -14,24 +14,49 @@ This particular REST API pattern allows you to continue the communication from w
 
 ## Real-world example
 
-For our demo we will use a pretty common PDF to JPG conversion example. This conversion produces multiple files as 
-each PDF page is split into a separate JPEG image. Let's say you want to ZIP the images into a single archive and download it. 
+For our demo we will use a pretty common JPG to PDF conversion example. This conversion produces multiple PDF files as 
+each JPG is converted to PDF. Let's say you want to ZIP the images into a single archive and download it. 
 You can achieve that by uploading a source file and specifying further conversions.
 
-We'll use Node.js for this particular example, although all of our libraries support this feature. 
-For other programming languages, please refer to [our docs](https://www.convertapi.com/doc/chaining).
-
-Please note that the ```StoreFile=true``` parameter must be set when calling the conversion endpoint to store the file on our server for multiprocessing.
+We'll use Node.js for this particular example, although all of our libraries support this feature. For other programming languages libraries, please refer to [our libraries](https://www.convertapi.com/doc/libraries). 
 
 ```javascript
 let convertapi = require('convertapi')(process.env.CONVERT_API_SECRET)
 let jpgPaths = ['first.jpg', 'second.jpg', 'third.jpg']
 let pdfs = jpgPaths.map(j => convertapi.convert('pdf', { File: `./images/${j}` }))
 Promise.all(pdfs).then(p => convertapi.convert('merge', { Files: p }))
-  .then(r => r.file.save('merged.pdf'))
+  .then(
+    r => {
+          r.file.save('merged.pdf')
+          console.log('The images has been merged to merge.pdf file.')
+          }
+        )
 ```
 
 Run this [code snippet](https://repl.it/@ConvertAPI/JPG-greater-PDF-greater-MERGE) on Repl.it
+
+ANother common real time example when usre wants to convert DOCX document to PDF, merge whem and finally encrypt that merged pdf with "testpassword" password.
+
+```javascript
+let convertapi = require('convertapi')(process.env.CONVERT_API_SECRET)
+let docPaths = ['document1.docx', 'document2.docx']
+let pdfs = docPaths.map(j => convertapi.convert('pdf', { File: `./documents/${j}` }))
+Promise.all(pdfs)
+  .then(p => convertapi.convert('merge', { Files: p }))
+  .then(p => convertapi.convert('encrypt', { File: p, PdfUserPasswordNew : 'testpassword' }))
+  .then(
+    r => {
+          r.file.save('encrypt.pdf')
+          console.log('The documents has been merged, encrypted and saved to encrypt.pdf file.')
+          }
+        )
+```
+
+Run this [code snippet](https://repl.it/@ConvertAPI/Chaining-DOCX-to-PDF-then-MERGE-finally-ENCRYPT) on Repl.it
+
+The pure REST API chaining documentation can be found at [our docs](https://www.convertapi.com/doc/chaining).
+
+Please note that the ```StoreFile=true``` parameter must be set when calling the conversion endpoint directly not using library to store the file on our server for multiprocessing.
 
 ## Conclusion
 
