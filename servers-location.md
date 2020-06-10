@@ -1,6 +1,6 @@
 ConvertAPI instances are hosted by [IBM Cloud](https://www.ibm.com/cloud) in GEO locations listed below and Rest API requests are routed automatically to the nearest data center. Europe's Rest API instance complies with [GDPR](https://www.convertapi.com/gdpr).
 
-Please find the regions listed below and contact us to set up ConvertAPI in your GEO location. [Check DNS resolution](https://www.cdnperf.com/tools/cdn-latency-benchmark/?id=50bc1adec0f1bb507d719a2bab2a5fac)
+Please find the regions listed below and contact us to set up ConvertAPI in your GEO location. [Check DNS resolution](https://tools.keycdn.com/performance?url=https://v2.convertapi.com)
 
 ![ConvertAPI global locations](https://github.com/ConvertAPI/docs/raw/master/map.png)
 
