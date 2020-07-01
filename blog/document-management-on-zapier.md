@@ -83,6 +83,6 @@ And voila! Our test successfully creates a converted invoice with a “PAID” w
 
 ![Zapier Watermark PDFA](https://user-images.githubusercontent.com/62603039/86243802-a3cccb80-bbaf-11ea-90db-acb1a3c06c35.PNG)
 
-## Save time with ConvertAPI Zapier app
+## Save your time with ConvertAPI Zapier app
 
-To sum up, you can benefit hugely from automating routine document tasks with Zapier. With our ConvertAPI Zapier app you can achieve much more than shown in this example. Feel free to use any of our pre-set Zap templates - (https://zapier.com/apps/convertapi/integrations#zap-template-list)[https://zapier.com/apps/convertapi/integrations#zap-template-list]. Find more actions available for document management on (https://www.convertapi.com/doc/supported-formats)[https://www.convertapi.com/doc/supported-formats]. Feel free to contact our friendly customer support if you have any questions!
+To sum up, you can benefit hugely from automating routine document tasks with Zapier. With our ConvertAPI Zapier app you can achieve much more than shown in this example. Feel free to use any of our pre-set [Zap templates](https://zapier.com/apps/convertapi/integrations#zap-template-list). Find more actions available for document management in [our docs](https://www.convertapi.com/doc/supported-formats). Feel free to contact our friendly customer support if you have any questions!
