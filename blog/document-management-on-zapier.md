@@ -15,7 +15,7 @@ Using the ConvertAPI Zapier app, you can use all conversions you can find on htt
 
 ## Real-life example
 
-One of our use-cases where we managed to save time and reduce repetitive work is automating the management of paid invoices. We receive many invoices every month for our servers, tools, and services that we use every day. In this example, we will show you how we automated our invoice management task by converting the files based on a pre-set custom flow and save the processed data back to our Google Drive account. We can achieve that in 5 simple steps. So the business logic for our demonstration is as follows:
+One of our use-cases where we managed to save time and reduce repetitive work is automating the management of paid invoices with Zapier. We receive many invoices every month for our servers, tools, and services that we use every day. In this example, we will show you how we automated our invoice management task by converting the files based on a pre-set custom Zapier flow and save the processed data back to our Google Drive account. We can achieve that in 5 simple steps. So the business logic for our demonstration is as follows:
 
 1. Create a folder called "Invoices" on Google Drive and connect it to Zapier
 2. Convert Word and Excel documents from "Invoices" folder to PDF
