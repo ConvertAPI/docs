@@ -2,14 +2,14 @@ Many companies, including our own, have hundreds of documents to review, edit, a
 Using our ConvertAPI app on Zapier allows you to connect your document repositories from Google Drive or Dropbox to our file processing service and automate your daily tasks at ease. It allows you to:
 
 - Convert your Google Drive or Dropbox documents to Word, Excel, PDF and other 200 file formats
-- Encrypt, decrypt, compress, merge, split and watermark your documents
+- Encrypt, decrypt, compress, merge, split and watermark your documents on Zapier
 - Combine multiple file conversions in a single Zapier workflow
 - Process files of up to 2GB file size
-- Optimize performance with this fast and secure document management app
+- Automate document flows with this fast and secure Zapier document management app
 - Convert websites to PDF or images like JPG and PNG
 - Get quick support for any questions when setting up the Zap
 
-Using the ConvertAPI Zapier app, you can use all conversions you can find on https://www.convertapi.com/conversions and apply custom properties to suit your needs. With our document processing Zapier app, you get many file input options like the file itself, file URL, files hosted on Google Drive and Dropbox, or even website URL. You can attach event handlers to your Google Drive or Dropbox account for ConvertAPI to process your files automatically.
+With the ConvertAPI Zapier app, you can use all conversions you can find on https://www.convertapi.com/conversions and apply custom properties to suit your needs. With our document processing app, you get many file input options like the file itself, file URL, files hosted on Google Drive and Dropbox, website URL or even plain text data. You can attach event handlers to your Google Drive or Dropbox account for ConvertAPI to process your files automatically.
 
 ## Real-life example
 
@@ -83,9 +83,6 @@ And voila! Our test successfully creates a converted invoice with a “PAID” w
 
 ![Zapier Watermark PDFA](https://user-images.githubusercontent.com/62603039/86243802-a3cccb80-bbaf-11ea-90db-acb1a3c06c35.PNG)
 
-## Summary
+## Save time with ConvertAPI Zapier app
 
-- Do more with ConvertAPI zaps
-- Use our Zap templates
-- Find more converter formats on www...
-- Feel free to contact 
+To sum up, you can benefit hugely from automating routine document tasks with Zapier. With our ConvertAPI Zapier app you can achieve much more than shown in this example. Feel free to use any of our pre-set Zap templates - (https://zapier.com/apps/convertapi/integrations#zap-template-list)[https://zapier.com/apps/convertapi/integrations#zap-template-list]. Find more actions available for document management on (https://www.convertapi.com/doc/supported-formats)[https://www.convertapi.com/doc/supported-formats]. Feel free to contact our friendly customer support if you have any questions!
