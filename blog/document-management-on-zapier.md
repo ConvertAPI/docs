@@ -1,4 +1,4 @@
-# Document and process management on Zapier
+# Document and files management on Zapier
 
 Many companies, including our own, have hundreds of documents to review, edit, and archive every month. This includes invoices, specifications, design changes, contracts, and other red-tape stuff. These monotonous tasks repeated every month become the boring and time-consuming routine not only for our accountants but for us developers as well. And that’s where Zapier comes handy.
 Using our ConvertAPI app on Zapier allows you to connect your document repositories from Google Drive or Dropbox to our file processing service and automate your daily tasks at ease. It allows you to:
