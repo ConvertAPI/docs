@@ -25,3 +25,9 @@ This is an example of HTML text containing custom font:
 </style>
 <div style="font-family: Dorsa; font-size: xx-large">This is my custom font header</div>
 ```
+To convert TTF file https://dopiaza.org/tools/datauri/index.php site was used.
+
+## Conclusion
+It is possible to embed iamges and use cunstom fonts inside header and footer.
+Header and footer HTML is transferred each time with the conversion request so it is important to keep embedded assets as small as possible.
+For testing embedded assets can be created simple HTML file and opened with the browser locally.
