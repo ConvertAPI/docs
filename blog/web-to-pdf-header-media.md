@@ -1,22 +1,22 @@
 # WEB to PDF converter header and footer images and fonts
 
-In this short blog post, we will describe how to use `web` to `pdf` converter `header` and `footer` parameters with the images and custom fonts.
+In this brief article, we will describe how to use `web` to `pdf` converter's `header` and `footer` parameters to include images and custom fonts.
 
 ## Adding an image to the PDF header
-Converter parameter `header` and `footer` accepts a string with the HTML.
+Converter's parameter `header` and `footer` accepts a string with the HTML source code.
 Unfortunately, it is impossible to use any remote assets (images, fonts, etc..).
 HTML string should contain all the assets as a [data URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs).
-This is an example of HTML text that contains image data inside:
+Here is an example of HTML code that contains the image data inside:
 
 ```html
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATIAAAA/CAMAAABU8bSdAAAAAXNSR0IB2cksfwAAAMxQTFRFAAAA/49Q/5ZR/5hQ/5dQ/5dQ/5dQ/5dQ/5VQ/5hQ/5hQ/5dQ/5dQ/5hQ/5ZQ/5dQ/5dQ/5dQ/5dQ/5dQ/5ZQ/5dQ/5dQ/////////////////////////////////////////////////////////////////////////////////////5ZQ/5dQ/////////////////////////////5dQ/5dP/////5dQ/5RS/5dQ/////////////5dQ/5lR/5dQ/5dQ/5hR/5ZR5cUYuAAAAER0Uk5TABBfr7//338wb8+fIO9Q0MCggOBw8GAQPyAwb8//v3+fXz2RQKBgUsGP71Cc28Bw8LDfgNCQh5BAH/ZP4K+wPNz7Tz81rI5kAAAHzklEQVR4nO2ca3faOBCGTRMSmvuNGFxM0l3bu5gsGEyXtCXbvfz//7TgkUYjaSScJrvhnPr90MaWrMujGWk8bhoELrXe7e3vt9sH+/uHHWelRqjW+6M20cHxyVuPaNf17qBtqoHmU8cGttbp4VuPa3d1dsoR2xjaW49sV/XeAWyto9ZbD24ndUwQnV9cXl1cNMz8UsSub+SGf3bZMHMLiXVv6e3ORcPMISR2bpK5apixQmKXdtltw4yRj1jDjJOfWMPM1jZiDTNT24lRZltyG2Gv1+u/7vh2T3WIEWanbmbRh0EMGt7tNLZoCAq5m0L3H0npT9Wtn8VVPWI1mCXDmGqYvGBO/7FSMcaM3kxiU/e47r9U17/CxU1NYoTZLVfaH1o9jkKu4i4ol8tKb9rI4nwsyiiyM4vYrZG1ePgNSzzEktzuMJ68zgS/UwIBUzLGEfbt+rqEHRJknVOLmJHpeWi3dWYssYzrLn5b13QjS3GEU7s+OweC7IAhpjF72FxTZiwxXLYiHSdJMk6LzcXsRTN+sZzIQgVkYNc3NK92F4XsliVGmD2IyALLWWKR8MqixN0rK+LijbcyJzJwiWpV48isv0hAmTTFclOGyFrCyPBNHHf4T3D9u7x+8A5O7PwL0n8QzjJn/f9HTmQz8Mnqz6VZX+2/CUCdb35GZOK07Epij5JQV8QRn7/UYSbccuGzqvDr/XAQz/VoJyjvNto0cT+M8+FIME+q2wS5cSMaVW2NvpKmsqrKejvvf1gXJogg7vWM4LoPow0KBMIjk/OKKLIj/QjEs6CLkVctZnMw9MhdI7wjB6qKdgJhB5GMgONh1Uhk2scC7EJMba42mo9YZVLdSMJ7+DvQ96aSDGYqGksNz7SQBavqTkaQtQDGtZtYLWaRPSpDYyMC+aAjo8dtnqixyqBI2AVEBOGT1tSTNFpANhU4fcgGojEwotSDLMVnJTKxc914iNVhtqya82z2dgRyryHTlEfYJM4G7KI6gMOBUX8QUmRSHmTSLwPwzPxZyP4AFJDnb/HEKLNvPBFY2CVfyBLD2kxJFZHDtHA24JeZ+nGtFa3/HGSwHFMkgrZsI1P9SmQX1C9vHMQIsz95JLHes6m+nONyfXRP5ZTHOrK0zEoJIcHBjrUWQpxvnG5McTyhOGojm2NjhmdayEQDdPsHZBdQfu4iRph99iBxZi7EXFLhQOBk4qQSE1pAiC15YK2UPjJTfcnlATPJQw3ZIlsvTT9wBRkRNia6z+WOYiLrA9xVQJABBxHGuokpZjdcofu9hAyRLLOoP1XIFvoWngeGZ86QEzBS0cdMNSWQFWOzI2M8tImZ1pyGLOzJQ14LZYHDFUW2x8977/uRLU1zD0p1Bx7Fc540pTCJ95ti82NhtBWppiZGW66BAQhYpIxYnOuFqdBemK6pY3aBCvuPLx58+78VROky4gVEUI3aeLSvpg2zSQPtx8gwMrnnKWQ0mGCRjSklMhInMuiN3cvkZ3GGmST2Fw8FmnZlLZSJoCb4gDkp1RTMpvJMZXBTdlLAWDXqRaa7NnFsBzJxtOvI2vC6dNJ2MZPEXIFZQfs1BYajJ86WNZApUACv2oRLB7KkNjJhV197oFF1NXAjk7OSyD4BiTO4e+VghsROeShi4QZ8oR3syJmP/cgwAsjUar8cGZ/X6zuQTbA5iayjHZnomlaKEfSFDTHUMHjPDBmeM6zvQYaxOdSOXgfZjH1+yiBbTZbkKMHXcrHlP3qYbScWhAWDxaCgRW2rWshEbE78UiwOvza1kMmw2tCc1OeT74hMMNqXBTazGsRw8flXJjjT7JOsOhF8yIRnZuT5yNNPLWS+86MeMuGZMjQjzMwUo4+YNLN4pN2NSjLKXBm5eLFOFSL1DEUGxpiDK/XpLTYBUAsZdL2aKBVqFWohQ0SYnhY3zBQjEmuxbwdy8Z6U/4V3YvzCF5CZTEUkW5EtlRUsRDnY85N6YDzU3xw0p4VnSUhI4j4p6GReHxlGFjozM8WoiB3x333xk82oV133RpsgG740iJnn1ffz8KNIaE3IpBzIIoVMnvXCnmWSbLMuevKHQUY+iQPxFa0TqS7rIVORBWVmphgJMde38oWa3nyIKa3KHMIVUyJSuF5kAT4Y46yFPeejXi+BdZHMGGTiHSp/kjlwLk0FnaT1kandSzEzU4waMQezkD+9K6eICrsgo4hcyDCmIF/3Urut1IWMBGEVCGFResIdnCB/BjKZ9CHMjN8l+awTc9kZFzMtwQAsZoV8YfEjw5CAvlVazFKnlRHbnyg6ml8ix/EzkLVsZrxaR/6KiZ7kwyzYWqFetMJ19iPDKWtHZKYtQCHDFw5ZH127AgFJDDNGgTqzZyCry2wbsbWSVO0+xUwbfaIcd0FsZgsysXOlgaawRGirFGlyyIIwLRQy8o2NaimXpT6yesxqENsompblZFlO7Q904bgqyV7lE3pUlmlalp7PgKTb5SQtPZ+hQ/g6/rxx1WBWk9iPo63MGmKWtjBriDHyMmuIsfIw6zTEeLW6Esyx/k/73502xBzqILPTQwXtb/W7+Q0xS4pZu713+M9a74/JL043xBh1zttuNcRYtS5cwLqP25/+QfWJJ3bd/Kcsbj0yhta9an49zquza4PYZQNsq05u8BzoXp41wGrq5PHx9rHZ8w39C4409Rs9isJEAAAAAElFTkSuQmCC" />
 ```
-If this text is assigned to the [`header` parameter](https://www.convertapi.com/web-to-pdf#Header) then ConvertAPI logo should be visible in every page header.
-There are many services for converting an image to data URI, this is one of these: https://ezgif.com/image-to-datauri
+Once this code is passed to the [`header` parameter](https://www.convertapi.com/web-to-pdf#Header) the ConvertAPI logo should be visible on every page header.
+There are many tools for converting an image to the data URI, here is one of these: https://ezgif.com/image-to-datauri
 
 ## Using a custom font
-To embed custom font inside HTML, `<style>` tag must be used.
-This is an example of HTML text containing custom font:
+To embed a custom font into HTML, the `<style>` tag must be used.
+Here is an example of HTML code containing a custom font:
 ```html
 <style>
     @font-face{
@@ -26,9 +26,9 @@ This is an example of HTML text containing custom font:
 </style>
 <div style="font-family: Dorsa; font-size: xx-large">This is my custom font header</div>
 ```
-To convert TTF file https://dopiaza.org/tools/datauri/index.php site was used.
+Again, you can find plenty of tools to convert TTF files. In this example we used: https://dopiaza.org/tools/datauri/index.php.
 
 ## Conclusion
-It is possible to embed images and use custom fonts inside the header and footer.
-Header and footer HTML is transferred each time with the conversion request so it is important to keep embedded assets as small as possible.
-For testing embedded assets can be created a simple HTML file and opened with the browser locally.
+It is possible to embed images and custom fonts into the document's header and footer.
+It is important to keep the embedded assets as small as possible as the HTML of header and footer is transferred every time with the conversion request.
+For testing embedded assets you can create as a simple HTML file and preview it with the browser locally.
