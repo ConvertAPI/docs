@@ -1,4 +1,4 @@
-# WEB to PDF converter header and footer images and fonts
+## Header and footer images and fonts
 
 In this brief article, we will describe how to use `web` to `pdf` converter's `header` and `footer` parameters to include images and custom fonts.
 
