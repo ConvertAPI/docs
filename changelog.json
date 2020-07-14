@@ -42,7 +42,7 @@
   },
                      {
     "date":"2020-01-03",
-    "label":"feature",
+    "label":"new api",
     "description":"iWork Keynote to PNG, JPG and Tiff API added",
     "url":"https://www.convertapi.com/apple-iwork-api"
   },
@@ -53,19 +53,19 @@
   },
                  {
     "date":"2019-06-14",
-    "label":"feature",
+    "label":"new api",
     "description":"Added two new conversions - HEIC image to PDF and Images.",
     "url":"https://www.convertapi.com/doc/supported-formats"
   },
           {
     "date":"2019-01-24",
-    "label":"feature",
+    "label":"new api",
     "description":"Convert Word to TXT file, extract text from any Word document.",
     "url":"https://www.convertapi.com/docx-to-txt"
   },
                     {
     "date":"2018-10-26",
-    "label":"feature",
+    "label":"new api",
     "description":"Thumbnail generator added for PDF, create thumbnails in no time.",
     "url":"https://www.convertapi.com/pdf-to-thumbnail"
   },
@@ -107,7 +107,7 @@
   },
       {
     "date":"2019-06-12",
-    "label":"feature",
+    "label":"new api",
     "description":"PDF to OCR API. Add a textual layer to a scanned PDF document.",
     "url":"https://www.convertapi.com/pdf-to-ocr"
   },
@@ -131,19 +131,19 @@
   },
    {
     "date":"2016-07-05",
-    "label":"feature",
+    "label":"new api",
     "description":"OXPS file conversion to images added.",
     "url":"https://www.convertapi.com/oxps-to-jpg"
   },
   {
     "date":"2016-07-05",
-    "label":"feature",
+    "label":"new api",
     "description":"OXPS file conversion to pdf added.",
     "url":"https://www.convertapi.com/oxps-to-pdf"
   },
     {
     "date":"2018-06-13",
-    "label":"feature",
+    "label":"new api",
     "description":"Try our new E-Book (azv, epub, mobi, prc, tpz) Rest API which can convert e-book formats to PDF and images.",
     "url":"https://www.convertapi.com/ebooks-api"
   },
