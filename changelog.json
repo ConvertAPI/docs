@@ -11,11 +11,17 @@
     "description":"New EmbedFonts, SubsetFonts, SubsetFontsThreshold, OpenPage, and RotatePage properties added for PDF output.",
     "url":""
   },
-       {
-    "date":"2020-04-29",
+    {
+    "date":"2020-05-18",
     "label":"feature",
     "description":"RetainNumbering property added. Keeps the original PDF documents numbering rather than re-numbering merged PDF from the 1 page.",
     "url":"https://www.convertapi.com/pdf-to-merge"
+  },
+       {
+    "date":"2020-04-29",
+    "label":"feature",
+    "description":"Textbox watermark added which support adding multiline text as watermark or stamp in PDF.",
+    "url":"https://www.convertapi.com/pdf-to-watermark-textbox"
   },
        {
     "date":"2020-04-29",
