@@ -22,6 +22,12 @@
     "description":"Textbox watermark added which support adding multiline text as watermark or stamp in PDF.",
     "url":"https://www.convertapi.com/pdf-to-watermark-textbox"
   },
+         {
+    "date":"2020-04-14",
+    "label":"feature",
+    "description":"XLSX to CSV API added.",
+    "url":"https://www.convertapi.com/xlsx-to-csv"
+  },
        {
     "date":"2020-04-29",
     "label":"feature",
