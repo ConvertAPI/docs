@@ -1,4 +1,10 @@
 [     
+              {
+    "date":"2020-07-14",
+    "label":"feature",
+    "description":"New EmbedFonts, SubsetFonts, SubsetFontsThreshold, OpenPage, and RotatePage properties added for PDF output.",
+    "url":""
+  },
        {
     "date":"2020-04-29",
     "label":"feature",
