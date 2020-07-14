@@ -1,6 +1,12 @@
 [     
+             {
+    "date":"2020-07-16",
+    "label":"feature",
+    "description":"Acrobat 9 and DC PDF output added.",
+    "url":""
+  },
               {
-    "date":"2020-07-14",
+    "date":"2020-07-15",
     "label":"feature",
     "description":"New EmbedFonts, SubsetFonts, SubsetFontsThreshold, OpenPage, and RotatePage properties added for PDF output.",
     "url":""
