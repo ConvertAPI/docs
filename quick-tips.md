@@ -6,7 +6,8 @@ If `?download=inline` is appended to a stored conversion result file download li
 https://v2.convertapi.com/d/0ba132ddd698aaeafcf19ec0015e10e0/my_file.pdf?download=inline
 ```
 
-## File conversion examples
+
+## Converter
 
 Every conversion request call must be authenticated with `secret` or `token` and submited as `query parameter`. More detailed authentication methods are covered in [Authentication](https://www.convertapi.com/doc/auth) section. All supported [file format](https://www.convertapi.com/doc/supported-formats) conversions are provided here.
 
@@ -66,6 +67,7 @@ https://v2.convertapi.com/convert/doc/to/pdf?Secret=XXX
     ]
 }
 ```
+
 
 ## Web to PDF Header and footer images and fonts
 
