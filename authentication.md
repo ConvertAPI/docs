@@ -44,7 +44,7 @@ https://v2.convertapi.com/convert/doc/to/pdf?Token=4X4RxBGP
 You can leave the token to expire or delete it right away.
 ```
 [DELETE] 
-https://v2.convertapi.com/token/E1vYBWy7TAabnFSReCTJGiFUx3xoCJiyIwbPWvuRpcM=
+https://v2.convertapi.com/token/4X4RxBGP
 ```
 ### Generate Token
 Token generation algorithm steps:
