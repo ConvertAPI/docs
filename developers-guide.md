@@ -3,5 +3,5 @@ Find our API's technical information in the following articles about:
 - [File upload](https://www.convertapi.com/doc/upload)
 - [Response codes](https://www.convertapi.com/doc/response-codes)
 - [Content types](https://www.convertapi.com/doc/content-types)
-- [Response codes](https://www.convertapi.com/doc/response-codes)
+- [User information](https://www.convertapi.com/doc/user)
 - [Quick tips](https://www.convertapi.com/doc/quick-tips)
