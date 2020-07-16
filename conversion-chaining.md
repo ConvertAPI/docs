@@ -2,7 +2,7 @@ Converted files that are stored on the convertapi.com server can be accessed for
 
 The example below converts a PDF to JPG and stores the result on a server for chaining.
 
-### Convert PDF to JPG - chain #1
+### Convert PDF to JPG - workflow #1
 ```
 [POST]
 https://v2.convertapi.com/convert/pdf/to/jpg?Secret=XXX
@@ -46,7 +46,7 @@ https://v2.convertapi.com/convert/pdf/to/jpg?Secret=XXX
 }
 ```
 Now we can get all result files from the above response and send them to a ZIP endpoint using the example below.
-### ZIP all JPG files - chain #2
+### ZIP all JPG files - workflow #2
 ```
 [POST] 
 https://v2.convertapi.com/convert/jpg/to/zip?Secret=XXX
