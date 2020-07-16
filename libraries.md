@@ -1,4 +1,4 @@
-These libraries are maintained by the developers at ConvertAPI and are the easiest way to integrate ConvertAPI with your application.
+These libraries and tools are maintained by the developers at ConvertAPI and are the easiest way to integrate ConvertAPI with your application.
 
 - [Python](https://www.convertapi.com/doc/python-library)
 - [Node JS](https://www.convertapi.com/doc/node-library)
@@ -9,7 +9,9 @@ These libraries are maintained by the developers at ConvertAPI and are the easie
 - [Ruby](https://www.convertapi.com/doc/ruby-library)
 - [Go](https://www.convertapi.com/doc/go-library)
 - [CLI](https://www.convertapi.com/doc/cli-library)
+- [cURL](https://www.convertapi.com/doc/curl-library)
 - [Swift](https://github.com/djups/ConvertApiSwift) (unofficial, contributor Alex Jovmir)
+- [Zapier](https://www.convertapi.com/labs/zapier)
 
 ### Can't find the library you're looking for?
 
