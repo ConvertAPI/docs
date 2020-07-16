@@ -21,6 +21,8 @@ One of our use-cases where we managed to save time and reduce repetitive work is
 4. Archive PDFs using PDF/A file format
 5. Save files back to Google Drive to a folder called "Archived Invoices."
 
+![1](https://user-images.githubusercontent.com/62603039/87674797-2b553580-c77f-11ea-8126-e5aecf291871.png)
+
 ## Step 1 - Set up Google Drive
 
 First, let's create a folder for this Zap in Google Drive named "Invoices." In order to do that, go to Google Drive, Right-click -> New Folder, and call it Invoices. Following the same actions, let's create a folder called "Archived invoices". Now let's add some .xls and .docx documents to our "Invoices" folder. Once finished, you should have a file structure similar to this:
