@@ -9,7 +9,7 @@ These libraries and tools are maintained by the developers at ConvertAPI and are
 - [Ruby](https://www.convertapi.com/doc/ruby-library)
 - [Go](https://www.convertapi.com/doc/go-library)
 - [CLI](https://www.convertapi.com/doc/cli-library)
-- [cURL](https://www.convertapi.com/doc/curl-library)
+- [cURL](https://www.convertapi.com/doc/curl-integration)
 - [Swift](https://github.com/djups/ConvertApiSwift) (unofficial, contributor Alex Jovmir)
 - [Zapier](https://www.convertapi.com/labs/zapier)
 
