@@ -31,7 +31,8 @@ HTTP status code 401
   * `4011` Invalid user credentials - bad token.
   * `4012` Invalid user credentials - bad self generated token.
   * `4013` User credentials not set, secret or token must be passed.
-  * `4014` User inactive.
+  * `4014` The conversion seconds balance reached zero and no more conversions can be done..
+  * `4015` User inactive.
 
 ### Conversion failure
 * `500 Internal Server Error` Conversion failure.
