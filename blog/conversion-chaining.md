@@ -1,15 +1,15 @@
-One of our core conversion service features is conversion chaining. 
+One of our core conversion service features is conversion workflow. 
 We've seen so many services implementing it in wrong, anti-pattern ways that make the code slow and hardly reusable so we decided to describe it in detail.
 
-We solved this issue by what we call a REST API Conversion Chaining. 
+We solved this issue by what we call the REST API Conversion Workflows. 
 It simply means applying multiple conversions to a file uploaded to our server. You can process the file over and over again by calling appropriate conversion methods via REST API. 
 There is no need to download a partial result and reupload it. The diagram below describes the process of the real-world example we will discuss in a moment.
 
-![Conversion chaining scheme](https://user-images.githubusercontent.com/62603039/82549001-e9d05180-9b64-11ea-8dfa-3e2a9e59869c.png)
+![Conversion workflow scheme](https://user-images.githubusercontent.com/62603039/82549001-e9d05180-9b64-11ea-8dfa-3e2a9e59869c.png)
 
-## Why use conversion chaining?
+## Why use conversion workflows?
 
-Conversion chaining not only improves the performance but also provides the flexibility to manage your file conversions step by step. This way, you gain the ability to handle any exceptions that might occur along the way. 
+Conversion workflows not only improve the performance but also provide the flexibility to manage your file conversions step by step. This way, you gain the ability to handle any exceptions that might occur along the way. 
 This particular REST API pattern allows you to continue the communication from where it failed without the need to rerun the whole process again. Now let's dive deep into a real-world demo!
 
 ## Real-world example
@@ -54,7 +54,7 @@ Promise.all(pdfs)
 
 Run this [code snippet](https://repl.it/@ConvertAPI/Chaining-DOCX-to-PDF-then-MERGE-finally-ENCRYPT) on Repl.it
 
-The pure REST API chaining documentation can be found in [our documentation](https://www.convertapi.com/doc/chaining) section.
+The pure REST API workflow documentation can be found in [our documentation](https://www.convertapi.com/doc/workflows) section.
 
 Please note that the ```StoreFile=true``` parameter must be set when calling the conversion endpoint directly (not using any library) to store the file on our server for multiprocessing.
 
@@ -63,6 +63,6 @@ Please note that the ```StoreFile=true``` parameter must be set when calling the
 To put it in a nutshell, conversion changing is the best practice for processing documents with the performance and flexibility perks. 
 It is available in all of our libraries. Use this approach to write a clean, reusable, and performance-oriented code! 
 
-Read more about conversion chaining in our [documentation](https://www.convertapi.com/doc/chaining). 
+Read more about conversion workflows in our [documentation](https://www.convertapi.com/doc/workflows). 
 
 Happy coding!
