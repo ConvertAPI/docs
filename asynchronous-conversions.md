@@ -1,4 +1,4 @@
-Asynchronous file conversions are made by setting the `Async` parameter to `True`. The response of the asynchronous conversion contains `JobId` which could be used to poll the result. The ConvertAPI supports two types of asynchronous results: - `Polling` and `WebHooks`.
+Asynchronous file conversions are made by setting the `Async` parameter to `True`. The response of the asynchronous conversion contains `JobId` which could be used to poll the result. The ConvertAPI supports two types of asynchronous results: - `Poll` and `Push` (WebHooks).
 
 ## Polling
 
