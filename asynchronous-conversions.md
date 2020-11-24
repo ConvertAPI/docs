@@ -1,6 +1,6 @@
 Asynchronous file conversions are made by setting the `Async` parameter to `True`. The response of the asynchronous conversion contains `JobId` which could be used to poll the result. The ConvertAPI supports two types of asynchronous results: - `Poll` and `Push` (WebHooks).
 
-## Polling
+## Poll
 
 **Asynchronous conversion request**
 
@@ -34,9 +34,9 @@ https://v2.convertapi.com/job/d3bd2056-4330-4cf3-9b18-483a2412dd6b
 * `503` No concurrent poll requests are allowed.
 * `5XX` Conversion error. Response is an error message.
 
-## WebHooks
+## Push
 
-The ConvertAPI supports WebHooks. When the conversion is completed the WebHook URL is called with `JobId`. The conversion request should include `WebHook parameter with URL` that should be called.
+The ConvertAPI uses WebHooks to make result pushing. When the conversion is completed the WebHook URL is called with `JobId`. The conversion request should include `WebHook parameter with URL` that should be called.
 
 **Asynchronous conversion request**
 
