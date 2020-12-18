@@ -38,7 +38,7 @@ HTTP status code 401
 * `500 Internal Server Error` Conversion failure.
   * `5000` Conversion timeout.
   * `5001` Conversion failed.
-  * `5002` PDF file is damaged.
+  * `5002` File is damaged.
   * `5003` File is password protected.
   * `5004` No tables to extract in PDF file.
   * `5005` Invalid URL format.
