@@ -31,4 +31,4 @@ To do that, simply convert each document to PDF and merge them into a single doc
 This conversion accepts a list of files and produces a single PDF output. 
 In order to achieve all the performance benefits, you might want to check the [workflows](https://www.convertapi.com/doc/workflows).
 
-Using this simple to use, yet powerful conversion service you can convert your files to 200+ file formats.
+Using this simple to use, yet powerful conversion service you can convert your files to 200+ file formats!
