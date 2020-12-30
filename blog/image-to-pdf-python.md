@@ -1,5 +1,3 @@
-# Create a PDF document from images using Python
-
 In complex information systems we often need to process document flows and in some cases aggregate and convert documents to other file formats. 
 These advanced techniques require lots of time and effort to develop and it becomes a headache maintain such project infrastructure. In these cases it is wise to
 use a 3rd party tool that specializes in these complex computations and provide an easily maintainable flexible solution to manipulate all sorts of structured data. 
