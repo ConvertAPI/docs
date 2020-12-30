@@ -21,8 +21,10 @@ $result->saveFiles('/path/to/result/dir');
 
 That's it, just replace [your secret](https://help.convertapi.com/en/article/how-to-create-a-free-account-2wr644/) and path to your file and it should work straight away. 
 
-However, if you want a more advanced conversion with control over whether to run javascript on the web page, 
+If you want a more advanced conversion with control over whether to run javascript on the web page, 
 remove cookie warning popups, ads, etc please refer to the [complete guide including an interactive demo](https://www.convertapi.com/html-to-pdf). 
 You will also find an auto-generated snippet at the bottom of the page!
 
-Quick tip: if you want to convert a web page by passing a **web page URL** instead of an HTML file, please refer to the [WEB to PDF guide](https://www.convertapi.com/web-to-pdf).
+However, this particular conversion accepts only an HTML file and all of the css and javascript should be inlined in the document. If you want to convert a web page that is hosted and accessible online by passing a **web page URL** instead of an HTML file, please refer to the [WEB to PDF guide](https://www.convertapi.com/web-to-pdf).
+
+Happy coding!
