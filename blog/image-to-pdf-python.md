@@ -1,6 +1,6 @@
 In complex information systems, we often need to process document flows and in some cases aggregate and convert documents to other file formats. 
 These advanced techniques require lots of time and effort to develop and it becomes a headache to maintain such project infrastructure. In these cases, it is wise to
-use a 3rd party tool that specializes in these complex computations and provide an easily maintainable flexible solution to manipulate all sorts of structured data. 
+use a 3rd party tool that specializes in these complex computations and provides an easily maintainable flexible solution to manipulate all sorts of structured data. 
 That's where [ConvertAPI Pyhton library](https://github.com/ConvertAPI/convertapi-python) comes in handy.
 
 In this example, we will take a look at how to create a PDF document from a list of images in just a few lines of code.
