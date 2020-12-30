@@ -10,7 +10,7 @@ _Note: if you don't want to use Composer, please follow the [manual installation
 
 Once you have the library installed, simply run this code snippet:
 
-```
+```php
 ConvertApi::setApiSecret('your-secret-here');
 $result = ConvertApi::convert('pdf', [
         'File' => '/path/to/my_file.html',
