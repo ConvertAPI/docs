@@ -1,5 +1,3 @@
-# How to convert HTML + CSS to PDF using PHP?
-
 HTML to PDF conversion might seem like a regular task, but it can be difficult to implement and maintain making your project much more complex. 
 Thus, many nowadays solutions come from a 3rd party rigid and robust service providers.
 We are going to use a simple API call to take care of the conversion.
