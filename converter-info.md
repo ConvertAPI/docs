@@ -5,14 +5,21 @@ This page and the whole https://www.convertapi.com/converters section is built b
 
 Full converters specification:
 
-`[GET]
+```
+[GET]
 https://v2.convertapi.com/info
-`
+```
 
 Specific converter's parameters (in this case DOCX to PDF):
 
-`[GET] https://v2.convertapi.com/info/docx/to/pdf`
+```
+[GET]
+https://v2.convertapi.com/info/docx/to/pdf
+```
 
 List all converter that supports conversion to a PDF file format:
 
-`[GET] https://v2.convertapi.com/info/*/to/pdf`
+```
+[GET] 
+https://v2.convertapi.com/info/*/to/pdf
+```
