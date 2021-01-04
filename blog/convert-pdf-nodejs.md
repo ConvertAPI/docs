@@ -1,7 +1,7 @@
 Many progressive web apps nowadays are built using a serverless architecture where complex computations and machine resources are hosted by a third-party service, 
 eliminating the need for server software and hardware management by the developer. 
 ConvertAPI is a cloud-based, platform-independent market leader when it comes to processing documents on demand.
-It allows you to convert images, MS office documents, ebooks, emails, web pages to PDF as well as merge, encrypt, compress, and apply multiple advanced operations to the
+It allows you to convert images, MS office documents, ebooks, emails, web pages to PDF as well as [merge](https://www.convertapi.com/pdf-to-merge), [encrypt](https://www.convertapi.com/pdf-to-encrypt), [compress](https://www.convertapi.com/pdf-to-compress), and apply multiple advanced operations to the
 final PDF document. In this example, we will see how simple it is to integrate it to our NodeJs project.
 
 ## The workflow
@@ -47,7 +47,7 @@ Let's add our styled cover page called "first-page.pdf" and a sample DOCX file f
 ![Folder structure](https://user-images.githubusercontent.com/62603039/103544276-818e7000-4ea8-11eb-9c49-83c4fb03e326.png)
 
 
-Now let's apply our first conversion [DOCX -> PDF](https://www.convertapi.com/docx-to-pdf). Simply put this code snippet inside the `http.createServer((req, res)` function so it is run when we visit the page:
+Now let's apply our first [DOCX -> PDF](https://www.convertapi.com/docx-to-pdf) conversion (you don't need to have MS Office installed on your machine to make this conversion). Simply put this code snippet inside the `http.createServer((req, res)` function so it is run when we visit the page:
 
 ```javascript
 var convertapi = require('convertapi')('your-secret-here');
