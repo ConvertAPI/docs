@@ -1,5 +1,3 @@
-# Convert documents to and from PDF with NodeJs
-
 Many progressive web apps nowadays are built using a serverless architecture where complex computations and machine resources are hosted by a third-party service, 
 eliminating the need for server software and hardware management by the developer. 
 ConvertAPI is a cloud-based, platform-independent market leader when it comes to processing documents on demand.
@@ -46,7 +44,7 @@ In our example, we will place two files into the "Files" folder and convert from
 Let's add our styled cover page called "first-page.pdf" and a sample DOCX file for demonstration purposes called "sample.docx". So our "Files" folder looks something like this:
 
 
-----------------add folder structure image here------------------
+![Folder structure](https://user-images.githubusercontent.com/62603039/103544276-818e7000-4ea8-11eb-9c49-83c4fb03e326.png)
 
 
 Now let's apply our first conversion [DOCX -> PDF](https://www.convertapi.com/docx-to-pdf). Simply put this code snippet inside the `http.createServer((req, res)` function so it is run when we visit the page:
@@ -86,5 +84,5 @@ convertapi.convert('pdf', {
 
 That's it, we have converted a DOCX file to PDF and then merged it with our cover page programmatically using NodeJs. You can apply further conversions like [PDF Compress](https://www.convertapi.com/pdf-to-compress), [PDF Encrypt](https://www.convertapi.com/pdf-to-encrypt), [archive PDF to PDFa](https://www.convertapi.com/pdf-to-pdfa), [generate a thumbnail preview](https://www.convertapi.com/pdf-to-thumbnail) and so on in the same manner. To get the most performance benefits you can chain multiple conversions using [conversion workflows](https://www.convertapi.com/doc/workflows). You can find a complete list of conversion parameters under [conversions section](https://www.convertapi.com/conversions). Simply select your conversion and you will see an interactive demo with all available parameters for the conversion. Don't forget to grab the auto-generated code snippet at the bottom!
 
-------------- add snippets image here ------------------
+![NodeJS code snippet](https://user-images.githubusercontent.com/62603039/103544270-7b988f00-4ea8-11eb-8b29-eb907af8053d.png)
 
