@@ -1,6 +1,6 @@
 Many progressive web apps nowadays are built using a serverless architecture where complex computations and machine resources are hosted by a third-party service, 
 eliminating the need for server software and hardware management by the developer. 
-ConvertAPI is a cloud-based, platform-independent market leader when it comes to processing documents on demand.
+ConvertAPI is a cloud-based, platform-independent service that handles document processing on demand.
 It allows you to convert [images](https://www.convertapi.com/image-api), [MS office documents](https://www.convertapi.com/ms-office-api), [ebooks](https://www.convertapi.com/ebooks-api), [emails](https://www.convertapi.com/email-api), [web pages](https://www.convertapi.com/web-api) to PDF as well as [merge](https://www.convertapi.com/pdf-to-merge), [encrypt](https://www.convertapi.com/pdf-to-encrypt), [compress](https://www.convertapi.com/pdf-to-compress), and apply multiple advanced operations to the
 final PDF document. In this example, we will see how simple it is to integrate it to our NodeJs project.
 
