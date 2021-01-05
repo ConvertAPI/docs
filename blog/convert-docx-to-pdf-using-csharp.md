@@ -85,7 +85,7 @@ All the magic is done by line ```convertapi.ConvertFile(docxFile, pdfFile);``` w
 
 ![Converted results](https://user-images.githubusercontent.com/62603039/77894058-6c334800-727d-11ea-8163-fd88309e9ff8.png)
 
-The API supports a bunch of properties, all of them can be found at https://www.convertapi.com/docx-to-pdf. The ConvertApiParam object must be created and passed into ConvertFile method as a parameter. The example below use PageRange to limit conversion to 1-3 pages from word document to pdf.
+The API supports a bunch of properties, all of them can be found at https://www.convertapi.com/docx-to-pdf. The ```ConvertApiParam``` object must be created and passed into ```ConvertFile``` method as a parameter. The example below use ```PageRange``` property to limit conversion to 1-3 pages from word document to pdf.
 
 ## Complete code
 
