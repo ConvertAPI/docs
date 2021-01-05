@@ -20,8 +20,7 @@ You can also convert files by passing a file URL if the file is hosted on a serv
 In our example, we will place two files into the "Files" folder and convert from there. 
 Let's add our styled cover page called "first-page.pdf" and a sample DOCX file that will appear as our PDF's content called "sample.docx". So our "Files" folder looks something like this:
 
-
-![Folder structure](https://user-images.githubusercontent.com/62603039/103544276-818e7000-4ea8-11eb-9c49-83c4fb03e326.png)
+![Folder structure](https://user-images.githubusercontent.com/62603039/103629769-66c00800-4f49-11eb-821c-c01b86f40d88.png)
 
 We will apply our first [DOCX -> PDF](https://www.convertapi.com/docx-to-pdf) conversion (you don't need to have MS Office installed on your machine to make this conversion). Simply put this code snippet inside the convertapi-nodejs.js file:
 
