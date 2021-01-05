@@ -16,7 +16,7 @@ First, let's create a directory for our project and add a file called convertapi
 `npm install convertapi --save`
 
 Now let's create a folder inside our project's root directory called "files", and put our documents there. 
-You can also convert files by passing a file URL if the file is hosted on a server, for more information about file upload options please refer to [our docs](https://www.convertapi.com/doc/upload).
+You can also convert files by passing a file URL if the file is hosted on a server (for more information about file upload options please refer to [our docs](https://www.convertapi.com/doc/upload)).
 In our example, we will place two files into the "Files" folder and convert from there. 
 Let's add our styled cover page called "first-page.pdf" and a sample DOCX file that will appear as our PDF's content called "sample.docx". So our "Files" folder looks something like this:
 
@@ -45,13 +45,10 @@ convertapi.convert('pdf', {
 }).then(function(result) {
 	return result.file.save('./files/document-body.pdf');
 }).then(function(file) {
-	console.log("File saved: " + file);
 	convertapi.convert('merge', {
 		Files: ['./files/first-page.pdf', file]
 	}, 'pdf').then(function(mergedResult) {
-		return mergedResult.file.save('./files/result.pdf');
-	}).then(function(file) {
-		console.log("Merged file: " + file);
+		mergedResult.file.save('./files/result.pdf');
 	});
 }).catch(function(e) {
 	console.error(e.toString());
