@@ -1,53 +1,29 @@
 Many progressive web apps nowadays are built using a serverless architecture where complex computations and machine resources are hosted by a third-party service, 
 eliminating the need for server software and hardware management by the developer. 
 ConvertAPI is a cloud-based, platform-independent market leader when it comes to processing documents on demand.
-It allows you to convert images, MS office documents, ebooks, emails, web pages to PDF as well as [merge](https://www.convertapi.com/pdf-to-merge), [encrypt](https://www.convertapi.com/pdf-to-encrypt), [compress](https://www.convertapi.com/pdf-to-compress), and apply multiple advanced operations to the
+It allows you to convert [images](https://www.convertapi.com/image-api), [MS office documents](https://www.convertapi.com/ms-office-api), [ebooks](https://www.convertapi.com/ebooks-api), [emails](https://www.convertapi.com/email-api), [web pages](https://www.convertapi.com/web-api) to PDF as well as [merge](https://www.convertapi.com/pdf-to-merge), [encrypt](https://www.convertapi.com/pdf-to-encrypt), [compress](https://www.convertapi.com/pdf-to-compress), and apply multiple advanced operations to the
 final PDF document. In this example, we will see how simple it is to integrate it to our NodeJs project.
 
 ## The workflow
 
-Let's say we want to generate a PDF document that has a static branded cover page, then a dynamic body, that can be anything from .docx, .xlsx, .pptx, images, 
+In this quick demo we want to generate a PDF document that has a static cover page and a dynamic body, that can be anything from .docx, .xlsx, .pptx, images, 
 text to even web pages that we'll convert to PDF and merge it with our pre-made title page. Later on, we will be able to compress, rotate, encrypt, archive the generated document as needed.
 
 ## Let's begin
 
-First, let's set up a simple [NodeJs webserver](https://nodejs.org/en/docs/guides/getting-started-guide/) where we will put our conversion logic. 
-Create a directory for our project and add a file called convertapi-nodejs.js:
-
-```javascript
-//Load HTTP module
-const http = require("http");
-const hostname = '127.0.0.1';
-const port = 3000;
-
-//Create HTTP server and listen on port 3000 for requests
-const server = http.createServer((req, res) => {
-  //Set the response HTTP header with HTTP status and Content type
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('ConvertAPI in action!');
-});
-
-//listen for request on port 3000, and as a callback function have the port listened on logged
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
-```
-
-Then, let's install a [ConvertAPI NodeJS library](https://github.com/ConvertAPI/convertapi-node) using npm:
+First, let's create a directory for our project and add a file called convertapi-nodejs.js. For this project to work on your environment you will need [NodeJs](https://nodejs.org/en/download/) installed. Then, let's add a [ConvertAPI NodeJS library](https://github.com/ConvertAPI/convertapi-node) using npm:
 
 `npm install convertapi --save`
 
 Now let's create a folder inside our project's root directory called "files", and put our source files there. 
-You can also convert your files by passing a file URL if the file is hosted on a server, for more information about file upload options please refer to [our docs](https://www.convertapi.com/doc/upload).
+You can also convert files by passing a file URL if the file is hosted on a server, for more information about file upload options please refer to [our docs](https://www.convertapi.com/doc/upload).
 In our example, we will place two files into the "Files" folder and convert from there. 
-Let's add our styled cover page called "first-page.pdf" and a sample DOCX file for demonstration purposes called "sample.docx". So our "Files" folder looks something like this:
+Let's add our styled cover page called "first-page.pdf" and a sample DOCX file that will appear as our PDF's content called "sample.docx". So our "Files" folder looks something like this:
 
 
 ![Folder structure](https://user-images.githubusercontent.com/62603039/103544276-818e7000-4ea8-11eb-9c49-83c4fb03e326.png)
 
-
-Now let's apply our first [DOCX -> PDF](https://www.convertapi.com/docx-to-pdf) conversion (you don't need to have MS Office installed on your machine to make this conversion). Simply put this code snippet inside the `http.createServer((req, res)` function so it is run when we visit the page:
+We will apply our first [DOCX -> PDF](https://www.convertapi.com/docx-to-pdf) conversion (you don't need to have MS Office installed on your machine to make this conversion). Simply put this code snippet inside the convertapi-nodejs.js file:
 
 ```javascript
 var convertapi = require('convertapi')('your-secret-here');
@@ -58,9 +34,9 @@ convertapi.convert('pdf', {
 });
 ```
 
-Replace 'your-secret-here' string with [your secret key](https://help.convertapi.com/en/article/how-to-create-a-free-account-2wr644/) and it will run the conversion immediately once we run the `node convertapi-node.js` command from CMD and visit http://127.0.0.1:3000/.
+Replace 'your-secret-here' string with [your secret key](https://help.convertapi.com/en/article/how-to-create-a-free-account-2wr644/) and it will run the conversion immediately once we run the `node convertapi-node.js` command from CMD.
 
-Secondly, let's merge our predefined styled PDF intro page with the converted DOCX file into a single PDF using the [PDF -> MERGE](https://www.convertapi.com/pdf-to-merge) conversion. Our extended method will look like this:
+Secondly, let's merge our styled cover page with the converted DOCX file into a single PDF using the [PDF -> MERGE](https://www.convertapi.com/pdf-to-merge) conversion. Our extended method will look like this:
 
 ```javascript
 var convertapi = require('convertapi')('your-secret-here');
