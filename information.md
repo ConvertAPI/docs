@@ -2,6 +2,8 @@ Query information about converters, their supported formats and account data.
 
 It is possible to get an information about all supported conversions and formats with parameter descriptions in JSON or XML formats.
 
+Using this endpoint you can create a dynamic document converter. Visual representation of the structure can be found here: https://www.convertapi.com/docx-to-pdf. This page and the whole [https://www.convertapi.com/conversions](https://www.convertapi.com/conversions) section is built based on the /info endpoint's returned JSON response.
+
 ### List all information
 ```
 [GET]
