@@ -3,8 +3,7 @@ ConvertAPI instances are hosted by [IBM Cloud](https://www.ibm.com/cloud) in GEO
 Please find the regions listed below and contact us to set up ConvertAPI in your GEO location. [Check DNS resolution](https://tools.keycdn.com/performance?url=https://v2.convertapi.com)
 
 
-![ConvertAPI global locations](https://user-images.githubusercontent.com/62603039/106759927-f4237480-663b-11eb-8112-781ce1b34bc6.png)
-
+![ConvertAPI global locations](https://user-images.githubusercontent.com/62603039/106760725-c428a100-663c-11eb-9a8f-0420a77d811f.png)
 
 
 | Region      | City           | Status  |
