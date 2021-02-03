@@ -4,7 +4,8 @@ Please find the regions listed below and contact us to set up ConvertAPI in your
 
 
 
-![ConvertAPI global locations](https://user-images.githubusercontent.com/51400244/89264898-ff1d2e00-d633-11ea-8e99-19ad950e2c58.png)
+![ConvertAPI global locations](https://user-images.githubusercontent.com/62603039/106753764-c7b82a00-6634-11eb-8274-da4ac009c54d.png)
+
 
 
 | Region      | City           | Status  |
