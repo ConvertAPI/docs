@@ -1,3 +1,12 @@
+---
+Title: My Awesome Title
+Author: Kostas
+DateCreated: 2021-02-12
+ShortDescription: This is my awesome comment. Oh yah. 
+MetaDescription: This is my awesome comment. Oh yah. 
+Tags: #foo, #bar
+---
+
 # Apply watermark to PDF programatically
 
 Using a ConvertAPI library for any programming language of your choice allows you easily apply watermarks to your pdf. ConvertAPI provides three different endpoints to watermark your PDF:
