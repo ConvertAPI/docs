@@ -8,6 +8,7 @@ Please find the regions listed below and contact us to set up ConvertAPI in your
 
 | Region      | City           | Status  |
 | ------------- |:-------------| -----:|
+|Europe | London, UK      |    Online |
 |US East      | Washington DC, US| Online |
 |Europe     | Amsterdam, NL      |   Online |
 |Southeast Asia | Singapore, SG     |   Online |
@@ -16,7 +17,6 @@ Please find the regions listed below and contact us to set up ConvertAPI in your
 |North America | Toronto, CA      |   [Request to set up](https://www.convertapi.com/support) |
 |North America| Querétaro, MX     |    [Request to set up](https://www.convertapi.com/support)|
 |South America | São Paulo, BR      |    [Request to set up](https://www.convertapi.com/support)|
-|Europe | London, UK      |    [Request to set up](https://www.convertapi.com/support) |
 |Europe | Paris, FR     |    [Request to set up](https://www.convertapi.com/support) |
 |Europe | Barcelona, ES      |    [Request to set up](https://www.convertapi.com/support) |
 |Europe |Winterthur, CH      |    [Request to set up](https://www.convertapi.com/support) |
