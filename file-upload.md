@@ -87,8 +87,14 @@ https://v2.convertapi.com/convert/doc/to/pdf?Secret=XXX&File=25811safe8e61dd3f51
     ]
 }
 ```
+#### Download the uploaded file
+You might want to download your file by ID at some point. It might be useful when investigating issues, just to double check if you are working with correct files. Please note that it will be automatically deleted after 3 hours.
+```
+[GET]
+https://v2.convertapi.com/d/25811safe8e61dd3f51ef00ee5f58b92
+```
 #### Delete uploaded file
-If the file is no longer required it can be deleted. Otherwise, it will be automatically deleted after 3 hours.
+If the file is no longer required it can be deleted. Otherwise, it will be automatically deleted after 3 hours. The endpoint is the same as for the file download, except that you need to call it using an HTTP DELETE method.
 ```
 [DELETE]
 https://v2.convertapi.com/d/25811safe8e61dd3f51ef00ee5f58b92
