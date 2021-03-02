@@ -1,3 +1,13 @@
+---
+title: ConvertAPI Press Release
+author_name: Jonas
+short_description: Baltsoft company announces the availability of upgraded ConvertAPI, a high-performance online files conversion and manipulation service for developers. It can be integrated into any application or platform in just a few minutes, scales up to handle any amount of traffic, uses little resources and supports 200+ conversion actions. 
+meta_description: ConvertAPI Press Release. A high-performance online files conversion and manipulation service for developers.
+tags: blog post
+date_created: 2020-03-22
+---
+<!--tags: blog post,new,feature,bug,improvements,api,integration-->
+
 ## ConvertAPI: Online Files Conversion Service for Any Platform or Application ##
 
 *Baltsoft company announces the availability of upgraded ConvertAPI, a high-performance online files conversion and manipulation service for developers. It can be integrated into any application or platform in just a few minutes, scales up to handle any amount of traffic, uses little resources and supports 200+ conversion actions. [https://www.convertapi.com](https://www.convertapi.com)*

@@ -1,3 +1,13 @@
+---
+title: Build a custom conversion workflow and improve performance with Conversion Chaining
+author_name: Kostas
+short_description: ConvertAPI provides a flexible solution for building custom conversion flows. You can process your files by applying multiple conversions and other file manipulations using conversion chaining. This best-practice driven REST API approach improves performance and gives you full control over file processing at any stage of the flow. 
+meta_description: Conversion workflow is a powerful feature improving the performance and flexibility of our REST API conversion service.
+tags: feature,blog post
+date_created: 2020-05-20
+---
+<!--tags: blog post,new,feature,bug,improvements,api,integration-->
+
 One of our core conversion service features is conversion workflow. 
 We've seen so many services implementing it in wrong, anti-pattern ways that make the code slow and hardly reusable so we decided to describe it in detail.
 

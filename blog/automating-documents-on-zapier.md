@@ -1,3 +1,13 @@
+---
+title: How we save our time by automating documents flow on Zapier
+author_name: Kostas
+short_description: Many companies, including our own, have hundreds of documents to review, edit, and archive every month. Our ConvertAPI app on Zapier allows you to connect your document repositories from Google Drive or Dropbox to our file processing service and automate your daily tasks at ease. See it in action with our real-life example. 
+meta_description: Automate your file and documents management with Zapier ConvertAPI app. Convert, merge, split, watermark, encrypt your documents on Google Drive or Dropbox.
+tags: integration,blog post
+date_created: 2020-07-01
+---
+<!--tags: blog post,new,feature,bug,improvements,api,integration-->
+
 Many companies, including our own, have hundreds of documents to review, edit, and archive every month. This includes invoices, specifications, design changes, contracts, and other red-tape stuff. These monotonous tasks repeated every month become the boring and time-consuming routine not only for our accountants but for us developers as well. And that’s where Zapier comes handy.
 Using our ConvertAPI app on Zapier allows you to connect your document repositories from Google Drive or Dropbox to our file processing service and automate your daily tasks at ease. It allows you to:
 

@@ -1,3 +1,13 @@
+---
+title: Convert a list of images to PDF document using Python
+author_name: Kostas
+short_description: Having the ability to control all document conversions from a single place is a relief both for developers as well as project managers. This article shows how simple it is to configure and use our Python ConvertAPI library to create a PDF document from multiple images like jpg, png, webp, bmp, gif and others as well as chaining the conversions into a single workflow for all performance benefits. 
+meta_description: A quick and simple example demonstrating how to create a PDF Document from multiple images like jpg, png, webp, bmp, gif, etc using our Python ConvertAPI library.
+tags: integration,blog post
+date_created: 2020-12-30
+---
+<!--tags: blog post,new,feature,bug,improvements,api,integration-->
+
 In complex information systems, we often need to process document flows and in some cases aggregate and convert documents to other file formats. 
 These advanced techniques require lots of time and effort to develop and it becomes a headache to maintain such project infrastructure. In these cases, it is wise to
 use a 3rd party tool that specializes in these complex computations and provides an easily maintainable flexible solution to manipulate all sorts of structured data. 

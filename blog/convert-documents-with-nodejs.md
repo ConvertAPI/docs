@@ -1,3 +1,13 @@
+---
+title: Convert documents to and from PDF with NodeJs
+author_name: Kostas
+short_description: Many progressive web apps nowadays are built using a serverless architecture where complex computations and machine resources are hosted by a third-party service, eliminating the need for server software and hardware management by the developer. ConvertAPI is a cloud-based, platform-independent market leader when it comes to processing documents on demand. In this example, we will see how simple it is to integrate it to our NodeJs project. 
+meta_description: Serverless solution handling many file conversions from more than 200+ formats to PDF as well as PDF manipulations using a powerful NodeJs conversion library.
+tags: integration,blog post
+date_created: 2021-01-04
+---
+<!--tags: blog post,new,feature,bug,improvements,api,integration-->
+
 Many progressive web apps nowadays are built using a serverless architecture where complex computations and machine resources are hosted by a third-party service, 
 eliminating the need for server software and hardware management by the developer. 
 ConvertAPI is a cloud-based, platform-independent service that handles document processing on demand.
@@ -57,4 +67,3 @@ convertapi.convert('pdf', {
 That's it, we have converted a DOCX file to PDF and then merged it with our cover page programmatically using NodeJs. You can apply further conversions like [PDF Compress](https://www.convertapi.com/pdf-to-compress), [PDF Encrypt](https://www.convertapi.com/pdf-to-encrypt), [archive PDF to PDF/A](https://www.convertapi.com/pdf-to-pdfa), [generate a thumbnail preview](https://www.convertapi.com/pdf-to-thumbnail) and so on in the same manner. To get the most performance benefits you can chain multiple conversions using [conversion workflows](https://www.convertapi.com/doc/workflows). You can find a complete list of conversion parameters under [conversions section](https://www.convertapi.com/conversions). Simply select your conversion and you will see an interactive demo with all available parameters for the conversion. Don't forget to grab the auto-generated code snippet at the bottom!
 
 ![NodeJS code snippet](https://user-images.githubusercontent.com/62603039/103544270-7b988f00-4ea8-11eb-8b29-eb907af8053d.png)
-

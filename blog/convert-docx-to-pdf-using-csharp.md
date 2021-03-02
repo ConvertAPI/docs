@@ -1,3 +1,13 @@
+---
+title: How to convert DOCX to PDF using C#?
+author_name: Jonas
+short_description: Simple C# DOCX to PDF conversion workflow with code snippets to create a C# console app using Visual Studio or JetBrains Rider. All the magic is done by ConvertAPI NuGet library which takes word documents and converts them into PDF. All you need to do is simply paste the complete code snippet into your project and configure it to your own needs. 
+meta_description: Convert MS Word documents (DOC/DOCX) to PDF or another file format programmatically using C#. These code snippets demonstrate how to use the REST API library for the .NET Core Console application.
+tags: integration,blog post
+date_created: 2020-03-27
+---
+<!--tags: blog post,new,feature,bug,improvements,api,integration-->
+
 When I started using .NET Core framework, I found that document conversions from one file format to another are incredibly tricky. While digging the web, I noticed many people losing their heads about it and no simple solution that suits all. Most of the approaches I found were clumsy and outdated, so I came up with the decision to write my own conversion processor. Since there are so many developers struggling with this issue, I thought it would get me some extra karma points to share it and make it widely accessible. And that's how the ConvertAPI was born.
 
 Maximum efforts were put to craft a tool that makes the conversion of multiple DOCX files to PDF at once intuitive and straightforward. If you develop your code in C#, I'm sure this will be simpler than it sounds. I will explain the process in a few simple steps:
