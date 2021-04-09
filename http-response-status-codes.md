@@ -49,4 +49,4 @@ HTTP status code 401
   * `50010` File link is set incorrectly. Url or File Id must be set.
 
 ### Throttle failure
-* `502 Bad Gateway` Request rejected due to rate limits. Retry is available after a few seconds.
+* `503 Service Unavailable` Request rejected due to rate limits. Retry is available after a few seconds.
